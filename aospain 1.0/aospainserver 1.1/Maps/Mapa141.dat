@@ -1,0 +1,7 @@
+[Mapa141]
+Name=Dungeon
+MusicNum=15-1
+StartPos=0-0-0
+Terreno=BOSQUE
+Zona=DUNGEON
+Restringir=No

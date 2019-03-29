@@ -1,0 +1,9 @@
+[Mapa64]
+Name=Lindos Este
+MusicNum=16-1
+StartPos=1-0-0
+Terreno=BOSQUE
+Zona=CAMPO
+Restringir=No
+pk=1
+BackUp=1

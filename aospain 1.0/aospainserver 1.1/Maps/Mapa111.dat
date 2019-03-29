@@ -1,0 +1,9 @@
+[Mapa111]
+Name=Nueva Esperanza
+MusicNum=20-1
+StartPos=0-0-0
+Terreno=BOSQUE
+Zona=CAMPO
+Restringir=No
+BackUp=1
+

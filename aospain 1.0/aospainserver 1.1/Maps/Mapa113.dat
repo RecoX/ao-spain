@@ -1,0 +1,14 @@
+[Mapa107]
+Name=Nueva Esperanza SE
+MusicNum=1
+StartPos=0-0-0
+Terreno=NIEVE
+Zona=CAMPO
+Restringir=No
+[Mapa113]
+StartPos=0-0-0
+Terreno=NIEVE
+Zona=CAMPO
+Restringir=No
+Name=Nueva Esperanza
+MusicNum=19-1

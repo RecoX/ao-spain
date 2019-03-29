@@ -1,0 +1,64 @@
+Select Case UCase$(Left$(rdata, 7))
+
+Case "/TRANSFERIR " 'Transfiere oro de una cuenta bancaria a otra
+
+rdata = Right$(rdata, Len(rdata) - 7)
+Cant = val(ReadField(2, rdata, 32))
+Name = ReadField(1, rdata, 32)
+If Name = "" Then Exit Sub
+
+Else
+tIndex = UserIndex
+End If
+
+'¿Esta el user muerto? Si es asi no puede comerciar
+If UserList(UserIndex).Flags.Muerto = 1 Then
+Call SendData(ToIndex, UserIndex, 0, "||¡¡Estas 
+muerto!!" & FONTTYPE_INFO)
+Exit Sub
+End If
+'Se asegura que el target es un npc
+If UserList(UserIndex).Flags.TargetNpc = 0 Then
+Call SendData(ToIndex, UserIndex, 0, "||Primero tenes 
+que seleccionar un personaje, hace click izquierdo sobre el." & 
+FONTTYPE_INFO)
+Exit Sub
+End If
+rdata = Right$(rdata, Len(rdata) - 9)
+If Npclist(UserList(UserIndex).Flags.TargetNpc).NPCtype <> 
+NPCTYPE_BANQUERO _
+Or UserList(UserIndex).Flags.Muerto = 1 Then Exit Sub
+If Distancia(UserList(UserIndex).Pos, Npclist(UserList
+(UserIndex).Flags.TargetNpc).Pos) > 10 Then
+Call SendData(ToIndex, UserIndex, 0, "||Estas 
+demasiado lejos." & FONTTYPE_INFO)
+Exit Sub
+End If
+
+If FileExist(CharPath & UCase$(UserList(UserIndex).Name) 
+& ".chr", vbNormal) = False Then
+Call SendData(ToIndex, UserIndex, 0, "!!El personaje 
+no existe, cree uno nuevo.")
+CloseSocket (UserIndex)
+Exit Sub
+End If
+
+If Cant > 0 And Cant <= UserList(UserIndex).Stats.Banco Then
+UserList(UserIndex).Stats.Banco = UserList
+(UserIndex).Stats.Banco - Cant
+UserList(tIndex).Stats.Banco = UserList
+(tIndex).Stats.Banco + Cant
+Call SendData(ToIndex, UserIndex, 0, "||" & vbWhite 
+& "°" & "Tenes " & UserList(UserIndex).Stats.Banco & " monedas de 
+oro en tu cuenta." & "°" & Npclist(UserList
+(UserIndex).Flags.TargetNpc).Char.CharIndex & FONTTYPE_INFO)
+Call SendData(ToIndex, UserIndex, 0, "Has 
+transferido " & Cant & " monedas de oro a " & UserList(tIndex).Name 
+& "." & FONTTYPE_INFO)
+Else
+Call SendData(ToIndex, UserIndex, 0, "||" & vbWhite 
+& "°" & " No tenes esa cantidad." & "°" & Npclist(UserList
+(UserIndex).Flags.TargetNpc).Char.CharIndex & FONTTYPE_INFO)
+End If
+Exit Sub
+End Select

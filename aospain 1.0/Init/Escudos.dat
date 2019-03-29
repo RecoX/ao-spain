@@ -1,0 +1,39 @@
+[INIT]
+
+NumEscudos=6
+
+'escudo imperial
+[ESC1]
+Dir1=4727 'norte
+Dir2=4729
+Dir3=4726
+Dir4=4728 'sur
+
+'escudo celestial
+[ESC3]
+Dir1=13141
+Dir2=13143
+Dir3=13140
+Dir4=13142
+
+'escudo de oro
+[ESC4]
+Dir1=13167
+Dir2=13169
+Dir3=13166
+Dir4=13168
+
+'escudo de tortuga
+[ESC5]
+Dir1=13193
+Dir2=13195
+Dir3=13192
+Dir4=13194
+
+'escudo real
+[ESC6]
+Dir1=13115
+Dir2=13117
+Dir3=13114
+Dir4=13116
+

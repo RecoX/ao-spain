@@ -1,0 +1,10 @@
+[mapa163]
+Name=Sala de entrenamiento Arcadia
+MusicNum=10-1
+StartPos=1-0-0
+PK=0
+Terreno=DESIERTO
+Zona=CAMPO
+Restringir=No
+BackUp=1
+

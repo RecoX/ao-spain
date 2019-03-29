@@ -1,0 +1,26 @@
+; INF file for MSINET.ocx
+
+[DefaultInstall]
+CopyFiles=install.files
+RegisterOCXs=RegisterFiles
+
+[DestinationDirs]
+install.files=11
+
+[install.files]
+MSINET.OCX=MSINET.OCX
+
+[RegisterFiles]
+%11%\MSINET.OCX
+
+[MSINET.OCX]
+file-win32-x86=thiscab
+RegisterServer=Yes
+FileVersion=6,1,97,82
+
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[SourceDisksNames]
+1="default",,1

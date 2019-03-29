@@ -1,0 +1,14 @@
+[INIT]
+NumLines=10
+
+[Help]
+Line1=Bienvenidos al servidor Primario de AOSpain
+Line2=Para cualquier duda escribir /GM y os ayudara cualquier GM.
+Line3=Para moverte(Caminar = Flechas)
+Line4=Para Hablar (ENTER, Mensaje y luego ENTER)
+Line5=Para Gritar(ENTER, -Mensaje y luego ENTER) 
+Line6=Mensaje privado (ENTER, \nombre_usuario mensaje y luego ENTER)
+Line7=Pulsando la S(Desactivas o activas el seguro de ataque)
+Line8=Pulsando la C(Desactivas o activas el MODO COMBATE)
+Line9=Para Atacar(Pulsando el CONTROL)
+Line10=Un Saludo del Staff de AOSpain

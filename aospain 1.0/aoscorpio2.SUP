@@ -1,0 +1,8 @@
+//SUPPRESSIONPROJ:aoscorpio2
+//VERSION:5.00
+//ENABLE:Yes
+!include mfc42.sup
+!include msvbvm60.sup
+!include richtx32.sup
+!include vb6speed.sup
+

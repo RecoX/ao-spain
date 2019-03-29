@@ -1,0 +1,12259 @@
+'			TIPOS DE OBJETOS
+' 1: Comida
+' 2: Armas
+' 3: Armaduras
+' 4: Arboles
+' 5: Dinero
+' 6: Puertas
+' 7: Objetos contenedores (por ejemplo bolsas y cofres)
+' 8: Carteles
+' 9: Llaves
+' 10: Foros
+' 11: Pociones
+' 12: Libros
+' 13: Bebida
+' 14: Leña
+' 15: Fogata
+' 16: escudos
+' 17: cascos
+' 18: Herramientas
+' 19: telep
+' 20: Muebles
+' 21: joyas
+' 22: yacimiento
+' 23: metales
+' 24: pergaminos
+' 25: aura
+' 26: Instrumentos Musicales
+' 27: Yunque
+' 28: Fragua
+' 29: Gemas
+' 30: Flores
+' 31: barcos
+' 32: flechas
+' 33: botellas vacias
+
+'<--------------------Tipo de posicones------------------->
+'1 Modifica la Agilidad
+'2 Modifica la Fuerza
+'3 Repone HP
+'4 Repone Mana
+'5 Cura Envenenamiento
+'6 Remueve paralisis
+'7 Remueve ceguera
+'8 Remueve Estupidez
+'<--------------------Tipo de posicones------------------->
+
+
+[INIT]
+NumOBJs=963
+
+[OBJ1]
+Name=Manzana Roja
+GrhIndex=506
+ObjType=1
+MinHAM=10
+Valor=1
+
+[OBJ2]
+Name=Espada larga
+GrhIndex=504
+Objtype=2
+MinHIT=1
+MaxHIT=8
+Valor=350
+Anim=1
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CHAMAN"
+LingH=25
+LingO=0
+LingP=0
+SkHerreria=25
+
+[OBJ3]
+Name=Hacha
+GrhIndex=505
+Objtype=2
+MinHIT=2
+MaxHIT=10
+Valor=420
+Anim=2
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="ASESINO"
+CP9="PESCADOR"
+CP10="MINERO"
+CP11="ALDEANO"
+CP12="CAMARERO"
+CP13="COCINERO"
+CP14="CHAMAN"
+LingH=30
+LingO=0
+LingP=0
+SkHerreria=28
+
+[OBJ4]
+Name=Arbol 
+GrhIndex=7000
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+[OBJ5]
+Name=Arbol
+GrhIndex=7001
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+[OBJ6]
+Name=Arbol
+GrhIndex=7002
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ7]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=7
+IndexCerrada=8
+IndexCerradaLlave=8
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ8]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=7
+IndexCerrada=8
+IndexCerradaLlave=8
+
+[OBJ9]
+Name=Horquilla
+GrhIndex=508
+Objtype=2
+MinHIT=1
+MaxHIT=4
+Valor=150
+Anim=1
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="ASESINO"
+CP9="PESCADOR"
+CP10="MINERO"
+CP11="ALDEANO"
+CP12="CHAMAN"
+CP13="COCINERO"
+CP14="CAMARERO"
+
+[OBJ10]
+Name=Cofre abierto
+GrhIndex =502
+ObjType=7
+abierta=0
+llave=0
+resistencia=200
+CantItems=10
+NroItems=0
+
+[OBJ11]
+Name=Cofre cerrado
+GrhIndex =503
+ObjType=7
+abierta=0
+llave=0
+resistencia=200
+CantItems=10
+NroItems=0
+
+[OBJ12]
+Name=Monedas de oro
+GrhIndex =511
+ObjType=5
+
+[OBJ13]
+Name=Cartel Armas
+GrhIndex =500
+VGrande=501
+ObjType=8
+Texto=Tenemos los mejores precios de la zona.
+Agarrable=1
+
+[OBJ14]
+Name=Llave
+GrhIndex =509
+ObjType=9
+Clave=2
+
+[OBJ15]
+Name=Daga
+GrhIndex=510
+Objtype=2
+MinHIT=1
+MaxHIT=3
+Valor=20
+Anim=11
+Crucial=1
+Apuñala=1
+LingH=5
+SkHerreria=10
+
+
+[OBJ16] 'CASA RUINAS
+Name=Puerta de madera abierta 2
+GrhIndex =5599
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=16
+IndexCerrada=17
+IndexCerradaLlave=17
+
+[OBJ17] 'CASA RUINAS
+Name=Puerta de madera cerrada 2
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=16
+IndexCerrada=17
+IndexCerradaLlave=17
+
+[OBJ18]
+Name=Cartel Comida
+GrhIndex =512
+VGrande=501
+ObjType=8
+Texto=¡La mejor comida al mejor precio!.
+Agarrable=1
+
+[OBJ19]
+Name=Espada dos manos
+GrhIndex=504
+Objtype=2
+MinHIT=4
+MaxHIT=12
+Valor=550
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="ASESINO"
+CP9="PESCADOR"
+CP10="MINERO"
+CP11="LEÑADOR"
+CP12="CAMARERO"
+CP13="COCINERO"
+CP14="ALDEANO"
+CP15="CHAMAN"
+LingH=62
+SkHerreria=35
+
+
+[OBJ20]
+Name=Lapida
+GrhIndex =513
+VGrande=514
+ObjType=8
+Texto=Aquie yace Durmin Van Brick, otrora gran guerrero del imperio.
+Agarrable=1
+
+[OBJ21]
+Name=Porcion de tarta
+GrhIndex=515
+ObjType=1
+MinHam=15
+Valor=2
+
+[OBJ22]
+Name=Frutas del bosque
+GrhIndex=516
+ObjType=1
+MinHam=15
+Valor=2
+
+[OBJ23]
+Name=Pan de trigo
+GrhIndex=517
+ObjType=1
+MinHam=20
+Valor=3
+
+[OBJ24]
+Name=Pan de maiz
+GrhIndex=518
+ObjType=1
+MinHam=20
+Valor=3
+
+[OBJ25]
+Name=Pastel
+GrhIndex=519
+ObjType=1
+MinHam=25
+Valor=10
+
+[OBJ26]
+Name=Pollo
+GrhIndex=520
+ObjType=1
+MinHam=75
+Valor=7
+
+[OBJ27]
+Name=Chuleta
+GrhIndex=521
+ObjType=1
+MinHam=50
+Valor=10
+
+[OBJ28]
+Name=Queso de cabra
+GrhIndex=522
+ObjType=1
+MinHam=50
+Valor=5
+
+[OBJ29]
+Name=Sandia
+GrhIndex=523
+ObjType=1
+MinHam=25
+Valor=5
+
+
+[OBJ30]
+Name=Armadura de cuero
+GrhIndex=526
+NumRopaje=22
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+Crucial=1
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+
+[OBJ31]
+Name=Vestimentas comunes
+GrhIndex=527
+ObjType=3
+NumRopaje=1
+MAXDEF=0
+MINDEF=0
+Valor=50
+Crucial=1
+
+[OBJ32]
+Name=Vestimentas comunes
+GrhIndex=528
+ObjType=3
+NumRopaje=2
+MAXDEF=0
+MINDEF=0
+Valor=50
+Crucial=1
+
+[OBJ33]
+Name=Cartel Sastre
+GrhIndex =530
+VGrande=501
+ObjType=8
+Texto=Ropa Azrra, los mejores precios!
+Agarrable=1
+
+[OBJ34]
+Name=Foro
+GrhIndex=529
+ObjType=10
+ID=Ullathorpe
+Agarrable=1
+
+[OBJ35]
+Name=Vestimentas comunes
+GrhIndex=535
+ObjType=3
+NumRopaje=3
+MAXDEF=0
+MINDEF=0
+Valor=50
+Crucial=1
+
+[OBJ36]
+Name=Pocion amarilla
+GrhIndex=540
+ObjType=11
+TipoPocion=1
+MaxModificador=10
+MinModificador=1
+Vendible=0
+Valor=150
+DuracionEfecto=1000
+Crucial=1
+
+'Repone Mana
+[OBJ37]
+Name=Pocion azul
+GrhIndex=541
+ObjType=11
+TipoPocion=4
+MaxModificador=20
+MinModificador=12
+Vendible=0
+Valor=25
+Crucial=1
+
+'Repone HP
+[OBJ38]
+Name=Pocion roja
+GrhIndex=542
+ObjType=11
+TipoPocion=3
+MaxModificador=30
+MinModificador=30
+Vendible=0
+Valor=20
+Crucial=1
+
+'Mod Fuerza
+[OBJ39]
+Name=Pocion verde
+GrhIndex=543
+ObjType=11
+TipoPocion=2
+MaxModificador=5
+MinModificador=1
+Vendible=0
+Valor=300
+DuracionEfecto=1000
+Crucial=1
+
+[OBJ40]
+Name=Atlas Argentum
+GrhIndex =538
+VGrande=501
+ObjType=12
+Texto=Argentum
+Agarrable=0
+
+[OBJ41]
+Name=Libro antiguo
+GrhIndex =539
+VGrande=501
+ObjType=12
+Texto=Argentum
+Agarrable=0
+
+[OBJ42]
+Name=Vino
+GrhIndex=536
+ObjType=13
+MinAgu=90
+MinST=5
+Vendible=0
+Valor=10
+
+[OBJ43]
+Name=Botella de agua
+GrhIndex=537
+ObjType=13
+MinST=3
+MinAgu=30
+Vendible=0
+Valor=3
+
+[OBJ44]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+resistencia=200
+Agarrable=1
+
+[OBJ45]
+Name=Ropa de clan
+GrhIndex=544
+ObjType=3
+NumRopaje=35
+DEF=1
+Vendible=0
+Valor=150
+Crucial=1
+
+[OBJ46]
+Name=Arbol
+Info=Nieve 1
+GrhIndex=641
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+[OBJ47]
+Name=Arbol
+Info=Nieve 2
+GrhIndex=642
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+[OBJ48]
+Name=Arbol
+Info=Nieve 3
+GrhIndex=641
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+[OBJ49]
+Name=Arbol
+Info=Nieve 4
+GrhIndex=644
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+[OBJ50]
+Name=Arbol
+Info=Nieve 5
+GrhIndex=647
+Objtype=4
+Resistencia=500
+Agarrable=1
+
+'--------------------CASA 1 ULLA-----------------
+
+[OBJ51]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=2
+resistencia=200
+Agarrable=1
+IndexAbierta=51
+IndexCerrada=52
+IndexCerradaLlave=53
+
+[OBJ52]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=2
+resistencia=200
+Agarrable=1
+IndexAbierta=51
+IndexCerrada=52
+IndexCerradaLlave=53
+
+[OBJ53]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=2
+resistencia=200
+Agarrable=1
+IndexAbierta=51
+IndexCerrada=52
+IndexCerradaLlave=53
+
+[OBJ54]
+Name=Llave Ullathorpe casa 1
+Info=Ullathorpe casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=2
+Valor=30000
+
+
+
+[OBJ55]
+Name=Puerta de madera abierta
+GrhIndex =5599
+ObjType=6
+abierta=0
+llave=0
+clave=3
+resistencia=200
+Agarrable=1
+
+[OBJ56]
+Name=Puerta de madera cerrada
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=0
+clave=3
+resistencia=200
+Agarrable=1
+
+[OBJ57]
+Name=Puerta de madera cerrada
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=1
+clave=3
+resistencia=200
+Agarrable=1
+
+[OBJ58]
+Name=Leña
+GrhIndex=550
+ObjType=14
+valor=5
+
+[OBJ59]
+Name=Cartel Pociones
+GrhIndex =546
+VGrande=501
+ObjType=8
+Texto=Pociones, aumente su fuerza, agulidad o recupere salud!
+Agarrable=1
+
+[OBJ60]
+Name=Casa numero 1
+GrhIndex =547
+VGrande=501
+ObjType=8
+Texto=Casa numero 1
+Agarrable=1
+
+[OBJ61]
+Name=Cartel carpinteria
+GrhIndex =548
+VGrande=501
+ObjType=8
+Texto=Compra y venta de madera!
+Agarrable=1
+
+[OBJ62]
+Name=Cartel propiedades
+GrhIndex =549
+VGrande=501
+ObjType=8
+Texto=Compra y venta de propiedades, stock limitado!
+Agarrable=1
+
+[OBJ63]
+Name=Fogata
+GrhIndex =1521
+ObjType=15
+Agarrable=1
+
+[OBJ64]
+Name=Manzana Roja
+GrhIndex=506
+ObjType=1
+MinHam=10
+Valor=1
+Respawn=1 ' Hace ReSpawn
+
+'--------------------CASA 2 ULLA-----------------
+'CASA 2 ULLATHORPE
+[OBJ65]
+Name=Llave Ullathorpe casa 2
+Info=Ullathorpe casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=4
+Valor=30000
+
+
+[OBJ66]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=4
+resistencia=200
+Agarrable=1
+IndexAbierta=66
+IndexCerrada=67
+IndexCerradaLlave=68
+
+[OBJ67]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=4
+resistencia=200
+Agarrable=1
+IndexAbierta=66
+IndexCerrada=67
+IndexCerradaLlave=68
+
+[OBJ68]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=4
+resistencia=200
+Agarrable=1
+IndexAbierta=66
+IndexCerrada=67
+IndexCerradaLlave=68
+
+
+'CASA 3 ULLATHORPE
+[OBJ69]
+Name=Llave Ullathorpe casa 3
+Info=Ullathorpe casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=5
+Valor=30000
+
+[OBJ70]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=5
+resistencia=200
+Agarrable=1
+IndexAbierta=70
+IndexCerrada=71
+IndexCerradaLlave=72
+
+[OBJ71]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=5
+resistencia=200
+Agarrable=1
+IndexAbierta=70
+IndexCerrada=71
+IndexCerradaLlave=72
+
+[OBJ72]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=5
+resistencia=200
+Agarrable=1
+IndexAbierta=70
+IndexCerrada=71
+IndexCerradaLlave=72
+
+
+'CASA 4 ULLATHORPE
+[OBJ73]
+Name=Llave Ullathorpe casa 4
+Info=Ullathorpe casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=6
+Valor=30000
+
+[OBJ74]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=6
+resistencia=200
+Agarrable=1
+IndexAbierta=74
+IndexCerrada=75
+IndexCerradaLlave=76
+
+[OBJ75]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=6
+resistencia=200
+Agarrable=1
+IndexAbierta=74
+IndexCerrada=75
+IndexCerradaLlave=76
+
+[OBJ76]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=6
+resistencia=200
+Agarrable=1
+IndexAbierta=74
+IndexCerrada=75
+IndexCerradaLlave=76
+
+[OBJ77]
+Name=Casa numero 2
+GrhIndex =553
+VGrande=501
+ObjType=8
+Texto=Casa numero 2
+Agarrable=1
+
+[OBJ78]
+Name=Casa numero 3
+GrhIndex =552
+VGrande=501
+ObjType=8
+Texto=Casa numero 3
+Agarrable=1
+
+[OBJ79]
+Name=Casa numero 4
+GrhIndex =551
+VGrande=501
+ObjType=8
+Texto=Casa numero 4
+Agarrable=1
+
+
+[OBJ80]
+Name=Ropa de clan
+GrhIndex=554
+ObjType=3
+NumRopaje=35
+DEF=1
+Vendible=0
+Valor=150
+
+[OBJ81]
+Name=Sandia
+GrhIndex=523
+ObjType=1
+MinHP=4
+MinHam=25
+Vendible=0
+Valor=5
+Respawn=1 ' Hace ReSpawn
+
+[OBJ82]
+Name=Casa numero 5
+GrhIndex =555
+VGrande=501
+ObjType=8
+Texto=Casa numero 5
+Agarrable=1
+
+[OBJ83]
+Name=Casa numero 6
+GrhIndex =556
+VGrande=501
+ObjType=8
+Texto=Casa numero 6
+Agarrable=1
+
+[OBJ84]
+Name=Casa numero 7
+GrhIndex =568
+VGrande=501
+ObjType=8
+Texto=Casa numero 7
+Agarrable=1
+
+[OBJ85]
+Name=Casa numero 8
+GrhIndex =567
+VGrande=501
+ObjType=8
+Texto=Casa numero 8
+Agarrable=1
+
+[OBJ86]
+Name=Casa numero 9
+GrhIndex =569
+VGrande=501
+ObjType=8
+Texto=Casa numero 9
+Agarrable=1
+
+'<--------------------------------CASAS NIX------------------------>
+
+'<--------------------CASA 1 NIX------------------------>
+[OBJ87]
+Name=Llave casa 1 de Nix
+Info=Llave casa 1 de Nix
+GrhIndex =509
+ObjType=9
+Clave=7
+Valor=35000
+
+[OBJ88]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=7
+resistencia=200
+Agarrable=1
+IndexAbierta=88
+IndexCerrada=89
+IndexCerradaLlave=90
+
+
+[OBJ89]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=7
+resistencia=200
+Agarrable=1
+IndexAbierta=88
+IndexCerrada=89
+IndexCerradaLlave=90
+
+[OBJ90]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=7
+resistencia=200
+Agarrable=1
+IndexAbierta=88
+IndexCerrada=89
+IndexCerradaLlave=90
+
+
+
+'<--------------------CASA 2 NIX------------------------>
+[OBJ91]
+Name=Llave casa 2 de Nix
+Info=Llave casa 2 de Nix
+GrhIndex =509
+ObjType=9
+Clave=8
+Valor=35000
+
+[OBJ92]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=8
+resistencia=200
+Agarrable=1
+IndexAbierta=92
+IndexCerrada=93
+IndexCerradaLlave=94
+
+
+[OBJ93]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=8
+resistencia=200
+Agarrable=1
+IndexAbierta=92
+IndexCerrada=93
+IndexCerradaLlave=94
+
+[OBJ94]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=8
+resistencia=200
+Agarrable=1
+IndexAbierta=92
+IndexCerrada=93
+IndexCerradaLlave=94
+
+
+'<--------------------CASA 3 NIX------------------------>
+[OBJ95]
+Name=Llave casa 3 de Nix
+Info=Llave casa 3 de Nix
+GrhIndex =509
+ObjType=9
+Clave=9
+Valor=35000
+
+[OBJ96]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=9
+resistencia=200
+Agarrable=1
+IndexAbierta=96
+IndexCerrada=97
+IndexCerradaLlave=98
+
+
+[OBJ97]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=9
+resistencia=200
+Agarrable=1
+IndexAbierta=96
+IndexCerrada=97
+IndexCerradaLlave=98
+
+
+[OBJ98]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=9
+resistencia=200
+Agarrable=1
+IndexAbierta=96
+IndexCerrada=97
+IndexCerradaLlave=98
+
+
+'<--------------------CASA 4 NIX------------------------>
+[OBJ99]
+Name=Llave casa 4 de Nix
+Info=Llave casa 4 de Nix
+GrhIndex =509
+ObjType=9
+Clave=10
+Valor=35000
+
+[OBJ100]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=10
+resistencia=200
+Agarrable=1
+IndexAbierta=100
+IndexCerrada=101
+IndexCerradaLlave=102
+
+
+[OBJ101]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=10
+resistencia=200
+Agarrable=1
+IndexAbierta=100
+IndexCerrada=101
+IndexCerradaLlave=102
+
+[OBJ102]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=10
+resistencia=200
+Agarrable=1
+IndexAbierta=100
+IndexCerrada=101
+IndexCerradaLlave=102
+
+'<--------------------CASA 5 NIX------------------------>
+[OBJ103]
+Name=Llave casa 5 de Nix
+Info=Llave casa 5 de Nix
+GrhIndex =509
+ObjType=9
+Clave=11
+Valor=35000
+
+[OBJ104]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=11
+resistencia=200
+Agarrable=1
+IndexAbierta=104
+IndexCerrada=105
+IndexCerradaLlave=106
+
+
+[OBJ105]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=11
+resistencia=200
+Agarrable=1
+IndexAbierta=104
+IndexCerrada=105
+IndexCerradaLlave=106
+
+[OBJ106]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=11
+resistencia=200
+Agarrable=1
+IndexAbierta=104
+IndexCerrada=105
+IndexCerradaLlave=106
+
+
+'<--------------------CASA 6 NIX------------------------>
+[OBJ107]
+Name=Llave casa 6 de Nix
+Info=Llave casa 6 de Nix
+GrhIndex =509
+ObjType=9
+Clave=12
+Valor=35000
+
+[OBJ108]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=12
+resistencia=200
+Agarrable=1
+IndexAbierta=108
+IndexCerrada=109
+IndexCerradaLlave=110
+
+[OBJ109]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=12
+resistencia=200
+Agarrable=1
+IndexAbierta=108
+IndexCerrada=109
+IndexCerradaLlave=110
+
+[OBJ110]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=12
+resistencia=200
+Agarrable=1
+IndexAbierta=108
+IndexCerrada=109
+IndexCerradaLlave=110
+
+'<--------------------CASA 7 NIX------------------------>
+[OBJ111]
+Name=Llave casa 7 de Nix
+Info=Llave casa 7 de Nix
+GrhIndex =509
+ObjType=9
+Clave=13
+Valor=35000
+
+[OBJ112]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=13
+resistencia=200
+Agarrable=1
+IndexAbierta=112
+IndexCerrada=113
+IndexCerradaLlave=114
+
+[OBJ113]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=13
+resistencia=200
+Agarrable=1
+IndexAbierta=112
+IndexCerrada=113
+IndexCerradaLlave=114
+
+[OBJ114]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=13
+resistencia=200
+Agarrable=1
+IndexAbierta=112
+IndexCerrada=113
+IndexCerradaLlave=114
+
+'<--------------------CASA 8 NIX------------------------>
+[OBJ115]
+Name=Llave casa 8 de Nix
+Info=Llave casa 8 de Nix
+GrhIndex =509
+ObjType=9
+Clave=14
+Valor=35000
+
+[OBJ116]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=14
+resistencia=200
+Agarrable=1
+IndexAbierta=116
+IndexCerrada=117
+IndexCerradaLlave=118
+
+
+[OBJ117]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=14
+resistencia=200
+Agarrable=1
+IndexAbierta=116
+IndexCerrada=117
+IndexCerradaLlave=118
+
+[OBJ118]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=14
+resistencia=200
+Agarrable=1
+IndexAbierta=116
+IndexCerrada=117
+IndexCerradaLlave=118
+
+'<--------------------CASA 9 NIX------------------------>
+[OBJ119]
+Name=Llave casa 9 de Nix
+Info=Llave casa 9 de Nix
+GrhIndex =509
+ObjType=9
+Clave=15
+Valor=35000
+
+[OBJ120]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=15
+resistencia=200
+Agarrable=1
+IndexAbierta=120
+IndexCerrada=121
+IndexCerradaLlave=122
+
+[OBJ121]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=15
+resistencia=200
+Agarrable=1
+IndexAbierta=120
+IndexCerrada=121
+IndexCerradaLlave=122
+
+[OBJ122]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=15
+resistencia=200
+Agarrable=1
+IndexAbierta=120
+IndexCerrada=121
+IndexCerradaLlave=122
+
+
+[OBJ123]
+Name=Espada vikinga
+GrhIndex=561
+Objtype=2
+MinHIT=3
+MaxHIT=12
+Valor=2350
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="ASESINO"
+CP9="PESCADOR"
+CP10="MINERO"
+CP11="CARPINTERO"
+CP12="CHAMAN"
+CP13="ALDEANO"
+CP14="CAMARERO"
+CP15="COCINERO"
+LingH=45
+SkHerreria=45
+
+
+
+[OBJ124]
+Name=Katana
+GrhIndex=562
+Objtype=2
+MinHIT=6
+MaxHIT=19
+Valor=4350
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="LEÑADOR"
+CP12="ALDEANO"
+CP13="COCINERO"
+CP14="CAMARERO"
+CP15="CHAMAN"
+LingH=55
+SkHerreria=65
+
+
+[OBJ125]
+Name=Sable
+GrhIndex=563
+Objtype=2
+MinHIT=4
+MaxHIT=8
+Valor=3400
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="LEÑADOR"
+CP12="ALDEANO"
+CP13="COCINERO"
+CP14="CAMARERO"
+CP15="CHAMAN"
+LingH=20
+SkHerreria=35
+
+
+[OBJ126]
+Name=Hacha larga de guerra
+GrhIndex=564
+Objtype=2
+MinHIT=4
+MaxHIT=15
+Valor=3400
+Anim=3
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="LEÑADOR"
+CP12="ALDEANO"
+CP13="COCINERO"
+CP14="CAMARERO"
+CP15="CHAMAN"
+LingH=200
+SkHerreria=65
+
+
+[OBJ127]
+Name=Hacha de leñador
+GrhIndex=565
+Objtype=18
+MinHIT=4
+MaxHIT=10
+Valor=200
+Anim=1
+Crucial=1
+LingH=10
+SkHerreria=12
+
+
+[OBJ128]
+Name=Escudo de hierro
+Anim=1
+GrhIndex=557
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=15
+MINDEF=10
+Valor=2000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+LingH=150
+SkHerreria=55
+
+
+[OBJ129]
+Name=Hacha de guerra dos filos
+GrhIndex=566
+Objtype=2
+MinHIT=5
+MaxHIT=20
+Valor=5000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+LingH=230
+SkHerreria=75
+
+
+
+[OBJ130]
+Name=Escudo de hierro
+Anim=1
+GrhIndex=557
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=15
+MINDEF=10
+Valor=2000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+
+[OBJ131]
+Name=Casco de hierro completo
+Anim=3
+GrhIndex=558
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=15
+MINDEF=10
+Valor=2000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+
+[OBJ132]
+Name=Casco hierro 
+Anim=1 
+GrhIndex=559
+NumRopaje=2
+ObjType=3
+Subtipo=1 
+MAXDEF=10
+MINDEF=5
+Valor=1000
+CP1="MAGO"
+CP2="DRUIDA"
+
+[OBJ133]
+Name=Escudo Imperial
+Anim=1
+GrhIndex=560
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=20
+MINDEF=15
+Valor=6000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+LingH=250
+SkHerreria=65
+
+
+
+[OBJ134]
+Name=Cartel armaduras
+GrhIndex =570
+VGrande=501
+ObjType=8
+Texto=Compra y venta de armaduras, cascos y escudos.
+Agarrable=1
+
+[OBJ135]
+Name=Tunica
+GrhIndex=571
+NumRopaje=38
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=1000
+Crucial=1
+
+[OBJ136]
+Name=Ramitas
+GrhIndex=572
+ObjType=14
+Valor=3
+
+[OBJ137]
+Name=Foro
+GrhIndex=529
+ObjType=10
+ID=Nix
+Agarrable=1
+
+[OBJ138]
+Name=Caña de pescar
+GrhIndex=574
+ObjType=18
+Valor= 200
+Crucial=1
+
+[OBJ139]
+Name=Pez
+GrhIndex=573
+ObjType=1
+MinHam=75
+Valor=8
+
+'<--------------------CASTILLO 1 NIX------------------------>
+[OBJ140]
+Name=Llave Mansion Nix
+Info=Llave Mansion Nix
+GrhIndex =509
+ObjType=9
+Clave=16
+Valor=5000000
+
+[OBJ141]
+Name=Puerta de madera abierta
+GrhIndex =9199
+ObjType=6
+abierta=0
+llave=0
+clave=16
+resistencia=200
+Agarrable=1
+IndexAbierta=141
+IndexCerrada=142
+IndexCerradaLlave=143
+
+[OBJ142]
+Name=Puerta de madera cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=0
+clave=16
+resistencia=200
+Agarrable=1
+IndexAbierta=141
+IndexCerrada=142
+IndexCerradaLlave=143
+
+[OBJ143]
+Name=Puerta de madera cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=1
+clave=16
+resistencia=200
+Agarrable=1
+IndexAbierta=141
+IndexCerrada=142
+IndexCerradaLlave=143
+
+[OBJ144]
+Name=Teleport a Newbie Dungeon
+GrhIndex=669
+ObjType=19
+Agarrable=1
+
+[OBJ145]
+Name=Teleport a Nix
+GrhIndex=669
+ObjType=19
+Agarrable=1
+
+[OBJ146]
+Name=Teleport a Ullathorpe
+GrhIndex=669
+ObjType=19
+Agarrable=1
+
+[OBJ147] 'NPC
+Name=Arbol
+GrhIndex=7001
+Objtype=4
+Agarrable=1
+
+[OBJ148] 'NPC
+Name=Arbol de jungla
+GrhIndex=7002
+Objtype=4
+Agarrable=1
+
+[OBJ149] 'NPC
+Name=Arbol
+GrhIndex=7000
+Objtype=4
+Agarrable=1
+
+[OBJ150] 'NPC
+Name=Arbol
+GrhIndex=7222
+Objtype=4
+Agarrable=1
+
+[OBJ151] 'NPC
+Name=Arbol
+GrhIndex=7223
+Objtype=4
+Agarrable=1
+
+[OBJ152] 'NPC
+Name=Arbol
+GrhIndex=7224
+Objtype=4
+Agarrable=1
+
+[OBJ153] 'NPC
+Name=Arbol
+GrhIndex=7225
+Objtype=4
+Agarrable=1
+
+[OBJ154] 'NPC
+Name=Arbol
+GrhIndex=7226
+Objtype=4
+Agarrable=1
+
+[OBJ155] 
+Name=Cama
+Info=Cama horizontal
+GrhIndex=575
+Objtype=20
+valor=100
+
+[OBJ156] 
+Name=Cama
+Info=Cama vertical
+GrhIndex=576
+Objtype=20
+valor=100
+
+[OBJ157] 
+Name=Copa de plata
+Info=Copa de plata
+GrhIndex=579
+valor=2000
+Objtype=21
+
+[OBJ158]
+Name=Banana
+GrhIndex=581
+ObjType=1
+MinHAM=10
+Valor=1
+
+[OBJ159]
+Name=Hacha de barbaro
+GrhIndex=583
+Objtype=2
+MinHIT=5
+MaxHIT=16
+Valor=4000
+Anim=1
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="LEÑADOR"
+CP12="ALDEANO"
+CP13="COCINERO"
+CP14="CAMARERO"
+CP15="CHAMAN"
+LingH=130
+SkHerreria=55
+
+
+[OBJ160]
+Name=Cerveza
+GrhIndex=585
+ObjType=13
+MinAgu=60
+Valor=7
+
+[OBJ161]
+Name=Jugo de frutas
+GrhIndex=584
+ObjType=13
+MinAgu=100
+Valor=12
+
+[OBJ162] 
+Name=Silla
+Info=Silla
+GrhIndex=586
+Objtype=20
+valor=15
+SkCarpinteria=9
+Madera=25
+
+[OBJ163] 
+Name=Cuchara
+Info=Cuchara de madera
+GrhIndex=587
+Objtype=20
+valor=2
+SkCarpinteria=5
+Madera=3
+
+[OBJ164] 
+Name=Espada corta 
+GrhIndex=588
+Objtype=2
+MinHIT=1
+MaxHIT=8
+Valor=1000
+Anim=1
+Crucial=0
+LingH=12
+SkHerreria=12
+Apuñala=1
+
+[OBJ165]
+Name=Daga +1
+GrhIndex=510
+Objtype=2
+MinHIT=2
+MaxHIT=4
+Valor=200
+Anim=11
+Plus=1
+LingH=8
+SkHerreria=15
+Apuñala=1
+
+'Cura envenenamiento
+[OBJ166]
+Name=Pocion violeta
+GrhIndex=601
+ObjType=11
+TipoPocion=5
+Valor=10
+Crucial=1
+
+[OBJ167] 
+Name=Mueble rustico
+Info=Mueble
+GrhIndex=593
+Objtype=20
+valor=500
+
+[OBJ168] 
+Name=Silla
+Info=Silla
+GrhIndex=598
+Objtype=20
+valor=15
+SkCarpinteria=9
+Madera=25
+
+[OBJ169] 
+Name=Yunque
+Info=Yunque
+GrhIndex=600
+Objtype=27
+Agarrable=1
+
+[OBJ170]
+Name=Vestimenta de mujer
+GrhIndex=602
+ObjType=3
+NumRopaje=44
+MAXDEF=0
+MINDEF=0
+Valor=50
+Crucial=1
+Mujer=1
+
+'<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+'<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+'			Puertas Catacumbas Ulla/NiX
+'<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+'<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+[OBJ171] 'CASA RUINAS
+Name=Puerta
+GrhIndex =5599
+ObjType=6
+abierta=0
+llave=0
+clave=17
+resistencia=200
+Agarrable=1
+IndexAbierta=171
+IndexCerrada=172
+IndexCerradaLlave=173
+
+[OBJ172] 'CASA RUINAS
+Name=Puerta
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=0
+clave=17
+resistencia=200
+Agarrable=1
+IndexAbierta=171
+IndexCerrada=172
+IndexCerradaLlave=173
+
+[OBJ173] 'CASA RUINAS
+Name=Puerta
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=1
+clave=17
+resistencia=200
+Agarrable=1
+IndexAbierta=171
+IndexCerrada=172
+IndexCerradaLlave=173
+
+[OBJ174]
+Name=Llave catacumbas de Ullathorpe
+Info=Puerta del inicio
+GrhIndex =509
+ObjType=9
+Valor=1000
+Clave=17
+
+
+[OBJ175] 'CASA RUINAS
+Name=Puerta
+GrhIndex =5599
+ObjType=6
+abierta=0
+llave=0
+clave=18
+resistencia=200
+Agarrable=1
+IndexAbierta=175
+IndexCerrada=176
+IndexCerradaLlave=177
+
+[OBJ176] 'CASA RUINAS
+Name=Puerta
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=0
+clave=18
+resistencia=200
+Agarrable=1
+IndexAbierta=175
+IndexCerrada=176
+IndexCerradaLlave=177
+
+[OBJ177] 'CASA RUINAS
+Name=Puerta
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=1
+clave=18
+resistencia=200
+Agarrable=1
+IndexAbierta=175
+IndexCerrada=176
+IndexCerradaLlave=177
+
+[OBJ178]
+Name=Llave dungeon maleheing
+Info=Puerta del inicio
+GrhIndex =509
+ObjType=9
+Clave=18
+
+
+[OBJ179] 'CASA RUINAS
+Name=Puerta
+GrhIndex =5599
+ObjType=6
+abierta=0
+llave=0
+clave=19
+resistencia=200
+Agarrable=1
+IndexAbierta=179
+IndexCerrada=180
+IndexCerradaLlave=181
+
+[OBJ180] 'CASA RUINAS
+Name=Puerta
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=0
+clave=19
+resistencia=200
+Agarrable=1
+IndexAbierta=179
+IndexCerrada=180
+IndexCerradaLlave=181
+
+[OBJ181] 'CASA RUINAS
+Name=Puerta
+GrhIndex=5600
+ObjType=6
+abierta=1
+llave=1
+clave=19
+resistencia=200
+Agarrable=1
+IndexAbierta=179
+IndexCerrada=180
+IndexCerradaLlave=181
+
+[OBJ182]
+Name=Llave dungeon maleheing
+Info=Puerta del inicio
+GrhIndex =509
+ObjType=9
+Clave=19
+
+
+'FUERTE SUR OESTE ULLA
+[OBJ183]
+Name=Llave fuerte
+Info=Llave fuerte
+GrhIndex =509
+ObjType=9
+Clave=20
+Valor=90000
+
+
+[OBJ184]
+Name=Puerta
+Info=Fuerte suroeste ullathorpe
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=20
+resistencia=200
+Agarrable=1
+IndexAbierta=184
+IndexCerrada=185
+IndexCerradaLlave=186
+
+[OBJ185]
+Name=Puerta
+Info=Fuerte suroeste ullathorpe
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=20
+resistencia=200
+Agarrable=1
+IndexAbierta=184
+IndexCerrada=185
+IndexCerradaLlave=186
+
+[OBJ186]
+Name=Puerta
+Info=Fuerte suroeste ullathorpe
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=20
+resistencia=200
+Agarrable=1
+IndexAbierta=184
+IndexCerrada=185
+IndexCerradaLlave=186
+
+[OBJ187]
+Name=Piquete de minero
+GrhIndex=608
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+LingH=5
+SkHerreria=12
+
+
+[OBJ188]
+Name=Yacimiento de hierro
+Info=Yacimiento minero
+GrhIndex=8616
+ObjType=22
+Agarrable=1
+MineralIndex=192
+
+[OBJ189]
+Name=Yacimiento de hierro
+Info=Yacimiento minero
+GrhIndex=8617
+ObjType=22
+Agarrable=1
+MineralIndex=192
+
+[OBJ190]
+Name=Yacimiento de hierro
+Info=Yacimiento minero
+GrhIndex=8618
+ObjType=22
+Agarrable=1
+MineralIndex=192
+
+[OBJ191]
+Name=Yacimiento de hierro
+Info=Yacimiento minero
+GrhIndex=8619
+ObjType=22
+Agarrable=1
+MineralIndex=192
+
+[OBJ192]
+Name=Hierro
+Info=Hierro
+MinSkill=30
+GrhIndex=604
+ObjType=23
+Lingoteindex=386
+Valor=3
+
+[OBJ193]
+Name=Plata
+Info=Plata
+GrhIndex=632
+MinSkill=60
+Lingoteindex=387
+ObjType=23
+Valor=10
+
+[OBJ194]
+Name=Oro
+Info=Oro
+GrhIndex=631
+ObjType=23
+MinSkill=82
+Lingoteindex=388
+Valor=15
+
+[OBJ195]
+Name=Armadura de placas completa
+GrhIndex=605
+NumRopaje=45
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=24000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+LingH=800
+SkHerreria=76
+
+
+[OBJ196]
+Name=Tunica de mago
+GrhIndex=606
+NumRopaje=46
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=3000
+Crucial=1
+
+[OBJ197]
+Name=kolt magic
+GrhIndex=609
+Valor=1760
+Crucial=1
+HechizoIndex=6
+Objtype=24
+
+[OBJ198]
+Name=Serrucho
+GrhIndex=607
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+LingH=8
+SkHerreria=12
+
+
+
+[OBJ199]
+Name=Olocausto
+GrhIndex=609
+Valor=356
+Crucial=1
+HechizoIndex=2
+Objtype=24
+
+[OBJ200]
+Name=Curo Virus
+GrhIndex=609
+Valor=350
+Crucial=1
+HechizoIndex=1
+Objtype=24
+
+[OBJ201]
+Name=Curo Santus
+GrhIndex=609
+Valor=750
+Crucial=1
+HechizoIndex=3
+Objtype=24
+
+[OBJ202]
+Name=Virus
+GrhIndex=609
+Valor=12500
+Crucial=1
+HechizoIndex=4
+Objtype=24
+
+[OBJ203]
+Name=Wak Curo Santus
+GrhIndex=609
+Valor=12500
+Crucial=1
+HechizoIndex=5
+Objtype=24
+
+[OBJ204]
+Name=World Magic
+GrhIndex=609
+Valor=4000
+Crucial=1
+HechizoIndex=7
+Objtype=24
+
+[OBJ205]
+Name=Trueno Magic
+GrhIndex=609
+Valor=6500
+Crucial=1
+HechizoIndex=8
+Objtype=24
+
+[OBJ206]
+Name=Paraliza
+GrhIndex=609
+Valor=34500
+Crucial=1
+HechizoIndex=9
+Objtype=24
+
+[OBJ207]
+Name=remover paraliza
+GrhIndex=609
+Valor=1300
+Crucial=1
+HechizoIndex=10
+Objtype=24
+
+[OBJ208]
+Name=Vida divina
+GrhIndex=609
+Valor=15300
+Crucial=1
+HechizoIndex=11
+Objtype=24
+
+[OBJ209]
+Name=Cartel
+Info=Cartel Mineros
+GrhIndex =610
+VGrande=501
+ObjType=8
+Texto=Bienvenidos al gremio de los mineros, contamos con fabulosas herramientas y los mejores metales de todo Argentum.
+Agarrable=1
+
+[OBJ210]
+Name=Cartel casa 11
+GrhIndex =611
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+
+[OBJ211]
+Name=Cartel casa 12
+GrhIndex =612
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+
+[OBJ212]
+Name=Cartel casa 13
+GrhIndex =613
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ213]
+Name=Cartel casa 14
+GrhIndex =614
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ214]
+Name=Cartel casa 15
+GrhIndex =615
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ215]
+Name=Cartel casa 16
+GrhIndex =616
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ216]
+Name=Cartel casa 17
+GrhIndex =617
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ217]
+Name=Cartel casa 18
+GrhIndex =618
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+
+[OBJ218]
+Name=Cartel casa 19
+GrhIndex =619
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ219]
+Name=Cartel casa 10
+GrhIndex =620
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ220]
+Name=Cartel casa 20
+GrhIndex =621
+VGrande=501
+ObjType=8
+Texto=Residencia privada.
+Agarrable=1
+
+[OBJ221]
+Name=Cartel
+Info=Venta de hechizos
+GrhIndex =622
+VGrande=501
+ObjType=8
+Texto=¡Entrad noble mago!, puedo mostrarte mis mejores hechizos.
+Agarrable=1
+
+
+[OBJ222]
+Name=Cartel
+Info=Pescadores
+GrhIndex =623
+VGrande=501
+ObjType=8
+Texto=GREMIO DE PESCADORES
+Agarrable=1
+
+[OBJ223]
+Name=Cartel
+Info=Cruce NIX/ULLA
+GrhIndex =625
+VGrande=501
+ObjType=8
+Texto=Hola aventurero, unos cuantos kilomentros al norte se encuentra el pueblo de Ullathorpe y al oeste encontraras la ciudad de Nix. ¡Buena Suerte viajero!
+Agarrable=1
+
+
+[OBJ224]
+Name=Advertencia
+Info=Advertencia a criminales
+GrhIndex =624
+VGrande=501
+ObjType=8
+Texto=Forasteros: este pueblo forma parte del gran imperio de Argentum, cualquier accion criminal sera reprimida por la guardia real. Todo criminal sera perseguido y ajusticiado.                                La gobernacion.
+Agarrable=1
+
+
+[OBJ225]
+Name=Cartel
+Info=Cartel del newbie dungeon
+GrhIndex =626
+VGrande=501
+ObjType=8
+Texto=¡Hola osados aventureros, sed bienvenidos en el "Newbie Dungeon"!, aqui podran entrenar sus habilidades sin correr ninung riesgo ya que el dungeon esta fuertemente custodiado por la guardia imperial. Adentrandose encontraran criaturas perversas con las cuales podran luchar, tambien encontraran un sacerdote para ser resucitados, provisiones,etc. ¡Suerte y que lo disfruteis! El staff de Noland-Studios ;-)
+Agarrable=1
+
+
+[OBJ226]
+Name=Cartel
+Info=Cartel cruce ulla/dorck
+GrhIndex =628
+VGrande=501
+ObjType=8
+Texto=Sigue el camino del sur para ir a Nix, hacia al oeste encontraras el peligroso bosque de Dorck.
+Agarrable=1
+
+[OBJ227]
+Name=Cartel
+Info=bosque dorck
+GrhIndex =627
+VGrande=501
+ObjType=8
+Texto=Entrada al bosque de Dorck, mantengase se alejado.
+Agarrable=1
+
+[OBJ228]
+Name=Yacimiento de oro
+Info=Yacimiento minero
+GrhIndex=8608
+ObjType=22
+Agarrable=1
+MineralIndex=194
+
+[OBJ229]
+Name=Yacimiento de oro
+Info=Yacimiento minero
+GrhIndex=8609
+ObjType=22
+Agarrable=1
+MineralIndex=194
+
+[OBJ230]
+Name=Yacimiento de oro
+Info=Yacimiento minero
+GrhIndex=8610
+ObjType=22
+Agarrable=1
+MineralIndex=194
+
+[OBJ231]
+Name=Yacimiento de oro
+Info=Yacimiento minero
+GrhIndex=8611
+ObjType=22
+Agarrable=1
+MineralIndex=194
+
+
+[OBJ232]
+Name=Yacimiento de plata
+Info=Yacimiento minero
+GrhIndex=8612
+ObjType=22
+Agarrable=1
+MineralIndex=193
+
+[OBJ233]
+Name=Yacimiento de plata
+Info=Yacimiento minero
+GrhIndex=8613
+ObjType=22
+Agarrable=1
+MineralIndex=193
+
+[OBJ234]
+Name=Yacimiento de plata
+Info=Yacimiento minero
+GrhIndex=8614
+ObjType=22
+Agarrable=1
+MineralIndex=193
+
+[OBJ235]
+Name=Yacimiento de plata
+Info=Yacimiento minero
+GrhIndex=8615
+ObjType=22
+Agarrable=1
+MineralIndex=193
+
+[OBJ236]
+Name=Ropa de pordiosero
+GrhIndex=654
+NumRopaje=47
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=1
+Crucial=1
+
+[OBJ237]
+Name=Armadura klox
+GrhIndex=655
+NumRopaje=48
+ObjType=3
+MAXDEF=5
+MINDEF=3
+Valor=0
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+
+[OBJ238]
+Name=Túnica Azul
+GrhIndex=656
+NumRopaje=49
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=3000
+Crucial=1
+
+
+[OBJ239]
+Name=Túnica roja
+GrhIndex=657
+NumRopaje=50
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=3000
+Crucial=1
+
+[OBJ240]
+Name=Ropa de enano
+GrhIndex=658
+NumRopaje=52
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=25
+Crucial=1
+RazaEnana=1
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ241]
+Name=Puerta de madera abierta
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=241
+IndexCerrada=242
+IndexCerradaLlave=241
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ242]
+Name=Puerta de madera cerrada
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=241
+IndexCerrada=242
+IndexCerradaLlave=241
+
+[OBJ243]
+Name=Armadura de placas completa enanos
+GrhIndex=659
+NumRopaje=54
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=24000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP10="CARPINTERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+RazaEnana=1
+LingH=600
+SkHerreria=76
+
+
+'-------------------------------------------------------
+'Puerta para negocio porque no tiene clave
+[OBJ244]
+Name=Puerta de madera abierta
+GrhIndex =9199
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=244
+IndexCerrada=245
+IndexCerradaLlave=245
+
+'Puerta para negocio porque no tiene clave
+[OBJ245]
+Name=Puerta de madera cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=244
+IndexCerrada=245
+IndexCerradaLlave=245
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'Puerta para negocio porque no tiene clave
+[OBJ246]
+Name=Puerta de madera abierta
+GrhIndex =9200
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=246
+IndexCerrada=247
+IndexCerradaLlave=247
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ247]
+Name=Puerta de madera cerrada
+GrhIndex=9194
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=246
+IndexCerrada=247
+IndexCerradaLlave=247
+'------------------------------------------------------
+'-------------------------------------------------------
+'Puerta para negocio porque no tiene clave
+[OBJ248]
+Name=Puerta de madera abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=248
+IndexCerrada=249
+IndexCerradaLlave=249
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ249]
+Name=Puerta de madera cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=248
+IndexCerrada=249
+IndexCerradaLlave=249
+'------------------------------------------------------
+
+'-------------------------------------------------------
+'Puerta para negocio porque no tiene clave
+[OBJ250]
+Name=Puerta de madera abierta
+GrhIndex =9202
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=250
+IndexCerrada=251
+IndexCerradaLlave=251
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ251]
+Name=Puerta de madera cerrada
+GrhIndex=9196
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=250
+IndexCerrada=251
+IndexCerradaLlave=251
+'------------------------------------------------------
+
+'-------------------------------------------------------
+'Puerta para negocio porque no tiene clave
+[OBJ252]
+Name=Puerta de madera abierta
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=252
+IndexCerrada=253
+IndexCerradaLlave=253
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ253]
+Name=Puerta de madera cerrada
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=252
+IndexCerrada=253
+IndexCerradaLlave=253
+'------------------------------------------------------
+
+'-------------------------------------------------------
+'Puerta para negocio porque no tiene clave
+[OBJ254]
+Name=Puerta de madera abierta
+GrhIndex =9204
+ObjType=6
+abierta=0
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=254
+IndexCerrada=255
+IndexCerradaLlave=255
+
+
+'Puerta para negocio porque no tiene clave
+[OBJ255]
+Name=Puerta de madera cerrada
+GrhIndex=9198
+ObjType=6
+abierta=1
+llave=0
+resistencia=200
+Agarrable=1
+IndexAbierta=254
+IndexCerrada=255
+IndexCerradaLlave=255
+'------------------------------------------------------
+
+[OBJ256]
+Name=Foro
+Info=El gran consejo
+GrhIndex=529
+ObjType=10
+ID=El gran consejo
+Agarrable=1
+
+[OBJ257]
+Name=Foro
+Info=Del meson hostigado
+GrhIndex=529
+ObjType=10
+ID=Meson Hostigado
+Agarrable=1
+
+[OBJ258]
+Name=Cartel
+Info=Banco
+GrhIndex =670
+VGrande=501
+ObjType=8
+Texto=Banco Goliath, la mayor seguridad.
+Agarrable=1
+
+[OBJ259]
+Name=Cartel
+Info=Provisiones
+GrhIndex =672
+VGrande=501
+ObjType=8
+Texto=Provisiones.
+Agarrable=1
+
+[OBJ260]
+Name=Cartel
+Info=Sacerdote
+GrhIndex =673
+VGrande=501
+ObjType=8
+Texto=Resurrecciones.
+Agarrable=1
+
+[OBJ261]
+Name=Cartel
+Info=Meson Hostigado
+GrhIndex =671
+VGrande=501
+ObjType=8
+Texto=Meson Hostigado
+Agarrable=1
+
+[OBJ262]
+Name=Cartel
+Info=El gran consejo
+GrhIndex =719
+VGrande=501
+ObjType=8
+Texto=El gran consejo
+Agarrable=1
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 1 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ263]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=25
+resistencia=200
+Agarrable=1
+IndexAbierta=263
+IndexCerrada=264
+IndexCerradaLlave=265
+
+
+[OBJ264]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=25
+resistencia=200
+Agarrable=1
+IndexAbierta=263
+IndexCerrada=264
+IndexCerradaLlave=265
+
+[OBJ265]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=25
+resistencia=200
+Agarrable=1
+IndexAbierta=263
+IndexCerrada=264
+IndexCerradaLlave=265
+
+[OBJ266]
+Name=Llave casa 1
+Info=Razgul casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=25
+Valor=80000
+'------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 2 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ267]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=26
+resistencia=200
+Agarrable=1
+IndexAbierta=267
+IndexCerrada=268
+IndexCerradaLlave=269
+
+[OBJ268]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=26
+resistencia=200
+Agarrable=1
+IndexAbierta=267
+IndexCerrada=268
+IndexCerradaLlave=269
+
+[OBJ269]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=26
+resistencia=200
+Agarrable=1
+IndexAbierta=267
+IndexCerrada=268
+IndexCerradaLlave=269
+
+[OBJ270]
+Name=Llave casa 2
+Info=Razgul casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=26
+Valor=80000
+'------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 3 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ271]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=27
+resistencia=200
+Agarrable=1
+IndexAbierta=271
+IndexCerrada=272
+IndexCerradaLlave=273
+
+[OBJ272]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=27
+resistencia=200
+Agarrable=1
+IndexAbierta=271
+IndexCerrada=272
+IndexCerradaLlave=273
+
+[OBJ273]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=27
+resistencia=200
+Agarrable=1
+IndexAbierta=271
+IndexCerrada=272
+IndexCerradaLlave=273
+
+[OBJ274]
+Name=Llave casa 3
+Info=Razgul casa nro 1
+GrhIndex =509
+ObjType=9
+Clave=27
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 4 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ275]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=28
+resistencia=200
+Agarrable=1
+IndexAbierta=275
+IndexCerrada=276
+IndexCerradaLlave=277
+
+[OBJ276]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=28
+resistencia=200
+Agarrable=1
+IndexAbierta=275
+IndexCerrada=276
+IndexCerradaLlave=277
+
+[OBJ277]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=28
+resistencia=200
+Agarrable=1
+IndexAbierta=275
+IndexCerrada=276
+IndexCerradaLlave=277
+
+[OBJ278]
+Name=Llave casa 4
+Info=Razgul casa nro 4
+GrhIndex =509
+ObjType=9
+Clave=28
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 5 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ279]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=29
+resistencia=200
+Agarrable=1
+IndexAbierta=279
+IndexCerrada=280
+IndexCerradaLlave=281
+
+[OBJ280]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=29
+resistencia=200
+Agarrable=1
+IndexAbierta=279
+IndexCerrada=280
+IndexCerradaLlave=281
+
+[OBJ281]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=29
+resistencia=200
+Agarrable=1
+IndexAbierta=279
+IndexCerrada=280
+IndexCerradaLlave=281
+
+[OBJ282]
+Name=Llave casa 5
+Info=Razgul casa nro 5
+GrhIndex =509
+ObjType=9
+Clave=29
+Valor=80000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 6 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ283]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=30
+resistencia=200
+Agarrable=1
+IndexAbierta=283
+IndexCerrada=284
+IndexCerradaLlave=285
+
+[OBJ284]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=30
+resistencia=200
+Agarrable=1
+IndexAbierta=283
+IndexCerrada=284
+IndexCerradaLlave=285
+
+[OBJ285]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=30
+resistencia=200
+Agarrable=1
+IndexAbierta=283
+IndexCerrada=284
+IndexCerradaLlave=285
+
+[OBJ286]
+Name=Llave casa 6
+Info=Razgul casa nro 6
+GrhIndex =509
+ObjType=9
+Clave=30
+Valor=80000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 7 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ287]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=31
+resistencia=200
+Agarrable=1
+IndexAbierta=287
+IndexCerrada=288
+IndexCerradaLlave=289
+
+[OBJ288]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=31
+resistencia=200
+Agarrable=1
+IndexAbierta=287
+IndexCerrada=288
+IndexCerradaLlave=289
+
+[OBJ289]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=31
+resistencia=200
+Agarrable=1
+IndexAbierta=287
+IndexCerrada=288
+IndexCerradaLlave=289
+
+[OBJ290]
+Name=Llave casa 7
+Info=Razgul casa nro 7
+GrhIndex =509
+ObjType=9
+Clave=31
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 8 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ291]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=32
+resistencia=200
+Agarrable=1
+IndexAbierta=291
+IndexCerrada=292
+IndexCerradaLlave=293
+
+[OBJ292]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=32
+resistencia=200
+Agarrable=1
+IndexAbierta=291
+IndexCerrada=292
+IndexCerradaLlave=293
+
+[OBJ293]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=32
+resistencia=200
+Agarrable=1
+IndexAbierta=291
+IndexCerrada=292
+IndexCerradaLlave=293
+
+[OBJ294]
+Name=Llave casa 8
+Info=Razgul casa nro 8
+GrhIndex =509
+ObjType=9
+Clave=32
+Valor=80000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 9 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ295]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=33
+resistencia=200
+Agarrable=1
+IndexAbierta=295
+IndexCerrada=296
+IndexCerradaLlave=297
+
+[OBJ296]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=33
+resistencia=200
+Agarrable=1
+IndexAbierta=295
+IndexCerrada=296
+IndexCerradaLlave=297
+
+[OBJ297]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=33
+resistencia=200
+Agarrable=1
+IndexAbierta=295
+IndexCerrada=296
+IndexCerradaLlave=297
+
+[OBJ298]
+Name=Llave casa 9
+Info=Razgul casa nro 9
+GrhIndex =509
+ObjType=9
+Clave=33
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta del gran consejo de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ299]
+Name=Puerta abierta
+GrhIndex =9199
+ObjType=6
+abierta=0
+llave=0
+Clave=34
+resistencia=200
+Agarrable=1
+IndexAbierta=299
+IndexCerrada=300
+IndexCerradaLlave=301
+
+[OBJ300]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=0
+Clave=34
+resistencia=200
+Agarrable=1
+IndexAbierta=299
+IndexCerrada=300
+IndexCerradaLlave=301
+
+
+[OBJ301]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=1
+Clave=34
+resistencia=200
+Agarrable=1
+IndexAbierta=299
+IndexCerrada=300
+IndexCerradaLlave=301
+
+[OBJ302]
+Name=Llave del gran consejo
+Info=Llave del gran consejo
+GrhIndex =509
+ObjType=9
+Clave=34
+Valor=1
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta del vault 1 del gran consejo de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ303]
+Name=Puerta abierta
+GrhIndex =9199
+ObjType=6
+abierta=0
+llave=0
+Clave=35
+resistencia=200
+Agarrable=1
+IndexAbierta=303
+IndexCerrada=304
+IndexCerradaLlave=305
+
+[OBJ304]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=0
+Clave=35
+resistencia=200
+Agarrable=1
+IndexAbierta=303
+IndexCerrada=304
+IndexCerradaLlave=305
+
+[OBJ305]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=1
+Clave=35
+resistencia=200
+Agarrable=1
+IndexAbierta=303
+IndexCerrada=304
+IndexCerradaLlave=305
+
+[OBJ306]
+Name=Llave del gran consejo
+Info=Llave del gran consejo
+GrhIndex =509
+ObjType=9
+Clave=35
+Valor=1
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta del vault 2 del gran consejo de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ307]
+Name=Puerta abierta
+GrhIndex =9199
+ObjType=6
+abierta=0
+llave=0
+Clave=36
+resistencia=200
+Agarrable=1
+IndexAbierta=307
+IndexCerrada=308
+IndexCerradaLlave=309
+
+[OBJ308]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=0
+Clave=36
+resistencia=200
+Agarrable=1
+IndexAbierta=307
+IndexCerrada=308
+IndexCerradaLlave=309
+
+[OBJ309]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=1
+Clave=36
+resistencia=200
+Agarrable=1
+IndexAbierta=307
+IndexCerrada=308
+IndexCerradaLlave=309
+
+[OBJ310]
+Name=Llave del gran consejo
+Info=Llave del gran consejo
+GrhIndex =509
+ObjType=9
+Clave=36
+Valor=1
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta de la boveda goliath>>>>>>>>>>>>>>>>>
+[OBJ311]
+Name=Puerta abierta
+GrhIndex =9199
+ObjType=6
+abierta=0
+llave=0
+Clave=37
+resistencia=200
+Agarrable=1
+IndexAbierta=311
+IndexCerrada=312
+IndexCerradaLlave=313
+
+[OBJ312]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=0
+Clave=37
+resistencia=200
+Agarrable=1
+IndexAbierta=311
+IndexCerrada=312
+IndexCerradaLlave=313
+
+[OBJ313]
+Name=Puerta cerrada
+GrhIndex=9193
+ObjType=6
+abierta=1
+llave=1
+Clave=37
+resistencia=200
+Agarrable=1
+IndexAbierta=311
+IndexCerrada=312
+IndexCerradaLlave=313
+
+[OBJ314]
+Name=Llave del la boveda goliath
+Info=Llave del la boveda goliath
+GrhIndex =509
+ObjType=9
+Clave=37
+Valor=1
+'-------------------------------------------------------
+
+[OBJ315]
+Name=Cartel
+Info=Muelles
+GrhIndex =675
+VGrande=501
+ObjType=8
+Texto=Muelles, ¡prohibido arrojar basura al mar!. Todo aque que incurra en una infraccion sera multado.
+Agarrable=1
+
+[OBJ316]
+Name=Cartel
+Info=Finanzas Goliath
+GrhIndex =676
+VGrande=501
+ObjType=8
+Texto=Casa Central
+Agarrable=1
+
+[OBJ317]
+Name=Cartel
+Info=Palacio Real
+GrhIndex =677
+VGrande=501
+ObjType=8
+Texto=Palacio Real
+Agarrable=1
+
+[OBJ318]
+Name=Vista divina
+GrhIndex=609
+Valor=34500
+Crucial=1
+HechizoIndex=14
+Objtype=24
+Crucial=1
+
+[OBJ319]
+Name=Vida divina
+GrhIndex=609
+Valor=26500
+Crucial=1
+HechizoIndex=11
+Objtype=24
+Crucial=1
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 10 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ320]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=37
+resistencia=200
+Agarrable=1
+IndexAbierta=320
+IndexCerrada=321
+IndexCerradaLlave=322
+
+[OBJ321]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=37
+resistencia=200
+Agarrable=1
+IndexAbierta=320
+IndexCerrada=321
+IndexCerradaLlave=322
+
+[OBJ322]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=37
+resistencia=200
+Agarrable=1
+IndexAbierta=320
+IndexCerrada=321
+IndexCerradaLlave=322
+
+[OBJ323]
+Name=Llave casa 10
+Info=Razgul casa nro 10
+GrhIndex =509
+ObjType=9
+Clave=37
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 11 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ324]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=38
+resistencia=200
+Agarrable=1
+IndexAbierta=324
+IndexCerrada=325
+IndexCerradaLlave=326
+
+[OBJ325]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=38
+resistencia=200
+Agarrable=1
+IndexAbierta=324
+IndexCerrada=325
+IndexCerradaLlave=326
+
+[OBJ326]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=38
+resistencia=200
+Agarrable=1
+IndexAbierta=324
+IndexCerrada=325
+IndexCerradaLlave=326
+
+[OBJ327]
+Name=Llave casa 11
+Info=Razgul casa nro 11
+GrhIndex =509
+ObjType=9
+Clave=38
+Valor=80000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 12 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ328]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=39
+resistencia=200
+Agarrable=1
+IndexAbierta=328
+IndexCerrada=329
+IndexCerradaLlave=330
+
+[OBJ329]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=39
+resistencia=200
+Agarrable=1
+IndexAbierta=328
+IndexCerrada=329
+IndexCerradaLlave=330
+
+[OBJ330]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=39
+resistencia=200
+Agarrable=1
+IndexAbierta=328
+IndexCerrada=329
+IndexCerradaLlave=330
+
+[OBJ331]
+Name=Llave casa 12
+Info=Razgul casa nro 12
+GrhIndex =509
+ObjType=9
+Clave=39
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 13 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ332]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=40
+resistencia=200
+Agarrable=1
+IndexAbierta=332
+IndexCerrada=333
+IndexCerradaLlave=334
+
+[OBJ333]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=40
+resistencia=200
+Agarrable=1
+IndexAbierta=332
+IndexCerrada=333
+IndexCerradaLlave=334
+
+[OBJ334]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=40
+resistencia=200
+Agarrable=1
+IndexAbierta=332
+IndexCerrada=333
+IndexCerradaLlave=334
+
+[OBJ335]
+Name=Llave casa 13
+Info=Razgul casa nro 13
+GrhIndex =509
+ObjType=9
+Clave=40
+Valor=80000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 14 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ336]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=41
+resistencia=200
+Agarrable=1
+IndexAbierta=336
+IndexCerrada=337
+IndexCerradaLlave=338
+
+[OBJ337]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=41
+resistencia=200
+Agarrable=1
+IndexAbierta=336
+IndexCerrada=337
+IndexCerradaLlave=338
+
+[OBJ338]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=41
+resistencia=200
+Agarrable=1
+IndexAbierta=336
+IndexCerrada=337
+IndexCerradaLlave=338
+
+[OBJ339]
+Name=Llave casa 14
+Info=Razgul casa nro 14
+GrhIndex =509
+ObjType=9
+Clave=41
+Valor=120000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 15 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ340]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=42
+resistencia=200
+Agarrable=1
+IndexAbierta=340
+IndexCerrada=341
+IndexCerradaLlave=342
+
+[OBJ341]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=42
+resistencia=200
+Agarrable=1
+IndexAbierta=340
+IndexCerrada=341
+IndexCerradaLlave=342
+
+[OBJ342]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=42
+resistencia=200
+Agarrable=1
+IndexAbierta=340
+IndexCerrada=341
+IndexCerradaLlave=342
+
+[OBJ343]
+Name=Llave casa 15
+Info=Razgul casa nro 15
+GrhIndex =509
+ObjType=9
+Clave=42
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 16 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ344]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=43
+resistencia=200
+Agarrable=1
+IndexAbierta=344
+IndexCerrada=345
+IndexCerradaLlave=346
+
+[OBJ345]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=43
+resistencia=200
+Agarrable=1
+IndexAbierta=344
+IndexCerrada=345
+IndexCerradaLlave=346
+
+[OBJ346]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=43
+resistencia=200
+Agarrable=1
+IndexAbierta=344
+IndexCerrada=345
+IndexCerradaLlave=346
+
+[OBJ347]
+Name=Llave casa 16
+Info=Razgul casa nro 16
+GrhIndex =509
+ObjType=9
+Clave=43
+Valor=80000
+'-------------------------------------------------------
+
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 17 de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ348]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=44
+resistencia=200
+Agarrable=1
+IndexAbierta=348
+IndexCerrada=349
+IndexCerradaLlave=350
+
+[OBJ349]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=44
+resistencia=200
+Agarrable=1
+IndexAbierta=348
+IndexCerrada=349
+IndexCerradaLlave=350
+
+[OBJ350]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=44
+resistencia=200
+Agarrable=1
+IndexAbierta=348
+IndexCerrada=349
+IndexCerradaLlave=350
+
+[OBJ351]
+Name=Llave casa 17
+Info=Razgul casa nro 17
+GrhIndex =509
+ObjType=9
+Clave=44
+Valor=80000
+'-------------------------------------------------------
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta casa 18de Rázgul>>>>>>>>>>>>>>>>>
+[OBJ352]
+Name=Puerta abierta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=45
+resistencia=200
+Agarrable=1
+IndexAbierta=352
+IndexCerrada=353
+IndexCerradaLlave=354
+
+[OBJ353]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=45
+resistencia=200
+Agarrable=1
+IndexAbierta=352
+IndexCerrada=353
+IndexCerradaLlave=354
+
+[OBJ354]
+Name=Puerta cerrada
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=45
+resistencia=200
+Agarrable=1
+IndexAbierta=352
+IndexCerrada=353
+IndexCerradaLlave=354
+
+[OBJ355]
+Name=Llave casa 18
+Info=Razgul casa nro 18
+GrhIndex =509
+ObjType=9
+Clave=45
+Valor=80000
+'-------------------------------------------------------
+
+[OBJ356]
+Name=Armadura de las sombras
+GrhIndex=680
+NumRopaje=55
+ObjType=3
+MAXDEF=12
+MINDEF=8
+Valor=25000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="HERRERO"
+CP15="GUERRERO"
+CP16="PALADIN"
+CP17="CLERIGO"
+CP18="BANDIDO"
+LingH=400
+Lingp=50
+SkHerreria=80
+
+
+[OBJ357]
+Name=Túnica de druida
+GrhIndex=681
+NumRopaje=56
+ObjType=3
+MAXDEF=8
+MINDEF=4
+Valor=13000
+Crucial=1
+
+[OBJ358]
+Name=Teleport a Banderbill
+GrhIndex=669
+ObjType=19
+Agarrable=1
+
+[OBJ359]
+Name=Cota de mallas
+GrhIndex=682
+NumRopaje=57
+ObjType=3
+MAXDEF=8
+MINDEF=4
+Valor=5000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP4="BARDO"
+LingH=325
+SkHerreria=65
+
+
+[OBJ360]
+Name=Armadura de cazador
+GrhIndex=683
+NumRopaje=58
+ObjType=3
+MAXDEF=6
+MINDEF=3
+Valor=9000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP4="BARDO"
+
+[OBJ361]
+Name=Llamarada de dragon
+GrhIndex=609
+Valor=34500
+Crucial=15
+HechizoIndex=15
+Objtype=24
+Crucial=1
+
+[OBJ362]
+Name=Tambor
+GrhIndex=684
+Objtype=26
+Valor=58
+SND1=48
+SND2=48
+SND3=48
+SkCarpinteria=80
+Madera=1000
+
+[OBJ363]
+Name=Provocar hambre
+GrhIndex=609
+Valor=100
+Crucial=1
+HechizoIndex=12
+Objtype=24
+
+[OBJ364]
+Name=Terrible hambre de Igôr
+GrhIndex=609
+Valor=350
+Crucial=1
+HechizoIndex=13
+Objtype=24
+
+[OBJ365]
+Name=Daga + 2
+GrhIndex=710
+Objtype=2
+MinHIT=4
+MaxHIT=6
+Valor=800
+Anim=11
+Plus=1
+LingH=18
+SkHerreria=32
+Apuñala=1
+
+[OBJ366]
+Name=Daga + 3
+GrhIndex=711
+Objtype=2
+MinHIT=5
+MaxHIT=7
+Valor=1400
+Anim=11
+Plus=1
+LingH=28
+SkHerreria=42
+Apuñala=1
+
+[OBJ367]
+Name=Daga + 4
+GrhIndex=711
+Objtype=2
+MinHIT=6
+MaxHIT=8
+Valor=2400
+Anim=11
+Plus=1
+LingH=58
+SkHerreria=69
+Apuñala=1
+
+[OBJ368]
+Name=Lapida
+GrhIndex =513
+VGrande=514
+ObjType=8
+Texto=Aqui yace Altair de Oteren, fue conocido y amado por todos, sobre todo en Nix donde siempre mostraba su generosidad y su paciencia con los newbies, ayudando con todo lo que tenia a todos, Pescando por horas para dar a los demas. Altair descansa en paz, el pueblo de Nix siempre honrara tu memoria.
+Agarrable=1
+******************************************************************************************************************************************************************************************************************************************************************************************
+
+[OBJ371]
+Name=Vestimentas de noble
+GrhIndex=689
+NumRopaje=63
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=1000
+Alineacion=1
+
+'-------------------------------------------------------
+'<<<<<<<<<<<<<<<Puerta Isla Beleta>>>>>>>>>>>>>>>>>
+[OBJ373]
+Name=Puerta abierta
+Info=Isla Beleta
+GrhIndex =9201
+ObjType=6
+abierta=0
+llave=0
+Clave=49
+resistencia=200
+Agarrable=1
+IndexAbierta=373
+IndexCerrada=374
+IndexCerradaLlave=375
+
+[OBJ374]
+Name=Puerta cerrada
+Info=Isla Beleta
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=0
+Clave=49
+resistencia=200
+Agarrable=1
+IndexAbierta=373
+IndexCerrada=374
+IndexCerradaLlave=375
+
+[OBJ375]
+Name=Puerta cerrada
+Info=Isla Beleta
+GrhIndex=9195
+ObjType=6
+abierta=1
+llave=1
+Clave=49
+resistencia=200
+Agarrable=1
+IndexAbierta=373
+IndexCerrada=374
+IndexCerradaLlave=375
+
+[OBJ376]
+Name=Llave Isla Beleta
+Info=Isla Beleta
+GrhIndex =509
+ObjType=9
+Clave=49
+Valor=0
+'-------------------------------------------------------
+
+[OBJ377]
+Name=Foro
+GrhIndex=529
+ObjType=10
+ID=Beleta
+Agarrable=1
+
+[OBJ378]
+Name=Teleport
+GrhIndex=669
+ObjType=19
+Agarrable=1
+
+[OBJ381]
+Name=Túnica monje
+GrhIndex=693
+NumRopaje=79
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=3000
+Crucial=1
+
+[OBJ382]
+Name=Vestido azul
+GrhIndex=694
+NumRopaje=80
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=1200
+Crucial=1
+Mujer=1
+
+[OBJ384] 
+Name=Yunque
+Info=Yunque
+GrhIndex=600
+Objtype=27
+Agarrable=1
+
+[OBJ385] 
+Name=Fragua
+Info=Fragua
+GrhIndex=722
+Objtype=28
+Agarrable=1
+
+[OBJ386]
+Name=Lingote de hierro
+Info=Lingote de hierro
+GrhIndex=724
+ObjType=29
+Valor=25
+
+[OBJ387]
+Name=Lingote de plata
+Info=Lingote de plata
+GrhIndex=725
+ObjType=29
+Valor=55
+
+[OBJ388]
+Name=Lingote de oro
+Info=Lingote de oro
+GrhIndex=723
+ObjType=29
+Valor=100
+
+[OBJ389]
+Name=Martillo herrero
+GrhIndex=726
+Objtype=18
+Valor=250
+Anim=1
+Crucial=1
+LingH=18
+SkHerreria=20
+
+[OBJ390]
+Name=Armadura de placas completa + 1 
+GrhIndex=605
+NumRopaje=45
+ObjType=3
+MAXDEF=16
+MINDEF=11
+Valor=28000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+LingH=900
+SkHerreria=80
+
+[OBJ391]
+Name=Armadura de placas completa + 2
+GrhIndex=605
+NumRopaje=45
+ObjType=3
+MAXDEF=17
+MINDEF=12
+Valor=29000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+LingH=1000
+SkHerreria=85
+
+[OBJ392]
+Name=Armadura de placas completa enanos +1
+GrhIndex=659
+NumRopaje=54
+ObjType=3
+MAXDEF=16
+MINDEF=11
+Valor=25000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+RazaEnana=1
+LingH=700
+SkHerreria=76
+
+[OBJ393]
+Name=Armadura de placas completa enanos + 2
+GrhIndex=659
+NumRopaje=54
+ObjType=3
+MAXDEF=17
+MINDEF=12
+Valor=26000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+RazaEnana=1
+LingH=800
+SkHerreria=76
+
+[OBJ394]
+Name=Llamado a la naturaleza
+GrhIndex=609
+Valor=13350
+Crucial=1
+HechizoIndex=16
+Objtype=24
+
+[OBJ395]
+Name=Invokar Zombies
+GrhIndex=609
+Valor=19350
+Crucial=1
+HechizoIndex=17
+Objtype=24
+
+[OBJ396]
+Name=Celeridad
+GrhIndex=609
+Valor=12050
+Crucial=1
+HechizoIndex=18
+Objtype=24
+
+[OBJ397]
+Name=Torpeza
+GrhIndex=609
+Valor=13450
+Crucial=1
+HechizoIndex=19
+Objtype=24
+
+[OBJ398]
+Name=Garrote
+GrhIndex=714
+Objtype=2
+MinHIT=1
+MaxHIT=5
+Valor=350
+Anim=4
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CHAMAN"
+
+[OBJ399]
+Name=Cimitarra
+GrhIndex=709
+Objtype=2
+MinHIT=6
+MaxHIT=14
+Valor=3350
+Anim=5
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="CLERIGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="LEÑADOR"
+CP12="ALDEANO"
+CP13="COCINERO"
+CP14="CAMARERO"
+CP15="CHAMAN"
+LingH=45
+SkHerreria=45
+
+[OBJ400]
+Name=Vara de mago
+GrhIndex=715
+Objtype=2
+MinHIT=10
+MaxHIT=20
+Valor=25350
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+
+LingH=50
+LingP=100
+LingO=500
+SkHerreria=90
+
+[OBJ401]
+Name=Martillo de guerra
+GrhIndex=708
+Objtype=2
+MinHIT=4
+MaxHIT=8
+Valor=1350
+Anim=2
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="CHAMAN"
+LingH=35
+SkHerreria=42
+
+[OBJ402]
+Name=Espada de oro
+GrhIndex=716
+Objtype=2
+MinHIT=20
+MaxHIT=30
+Valor=75000
+Anim=8
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="CARPINTERO"
+LingH=500
+LingP=400
+LingO=300
+SkHerreria=100
+
+[OBJ403]
+Name=Espada de plata
+GrhIndex=713
+Objtype=2
+MinHIT=10
+MaxHIT=20
+Valor=13350
+Anim=9
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+LingH=30
+LingP=330
+SkHerreria=85
+
+[OBJ404]
+Name=Escudo de tortuga
+Anim=5
+GrhIndex=712
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=10
+MINDEF=5
+Valor=500
+CP1="MAGO"
+CP2="DRUIDA"
+LingH=5
+SkHerreria=20
+
+[OBJ405]
+Name=Casco de plata
+Anim=6
+GrhIndex=717
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=20
+MINDEF=15
+Valor=5000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+LingH=30
+LingP=130
+SkHerreria=65
+
+[OBJ406]
+Name=esmeralda lunar
+GrhIndex=700
+ObjType=29
+Valor=500000
+
+[OBJ407]
+Name=esmeralda azul
+GrhIndex=701
+ObjType=29
+Valor=500000
+
+[OBJ408]
+Name=esmeralda naranja
+GrhIndex=702
+ObjType=29
+Valor=500000
+
+[OBJ409]
+Name=esmeralda celeste
+GrhIndex=703
+ObjType=29
+Valor=500000
+
+[OBJ410]
+Name=esmeralda lila
+GrhIndex=704
+ObjType=29
+Valor=500000
+
+[OBJ411]
+Name=esmeralda roja
+GrhIndex=705
+ObjType=29
+Valor=500000
+
+[OBJ412]
+Name=esmeralda verde
+GrhIndex=706
+ObjType=29
+Valor=500000
+
+[OBJ413]
+Name=esmeralda violeta
+GrhIndex=707
+ObjType=29
+Valor=500000
+
+[OBJ414]
+Name=Piel lobo
+GrhIndex=697
+ObjType=30
+valor=10
+
+[OBJ415]
+Name=Piel oso pardo
+GrhIndex=699
+ObjType=30
+valor=13
+
+[OBJ416]
+Name=Piel oso polar
+GrhIndex=698
+ObjType=30
+valor=16
+
+'<--------------------CASAS LINDOS----------------->
+'<--------------------CASAS LINDOS----------------->
+'<--------------------CASAS LINDOS----------------->
+
+'<<<<< CASA 1 >>>>>>>>
+[OBJ417]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=50
+resistencia=200
+Agarrable=1
+IndexAbierta=417
+IndexCerrada=418
+IndexCerradaLlave=419
+
+[OBJ418]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=50
+resistencia=200
+Agarrable=1
+IndexAbierta=417
+IndexCerrada=418
+IndexCerradaLlave=419
+
+[OBJ419]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=50
+resistencia=200
+Agarrable=1
+IndexAbierta=417
+IndexCerrada=418
+IndexCerradaLlave=419
+
+[OBJ420]
+Name=Llave casa 1 de Lindos
+Info=Llave casa 1 de Lindos
+GrhIndex =509
+ObjType=9
+Clave=50
+Valor=40000
+
+'<<<<< CASA 2 >>>>>>>>
+[OBJ421]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=51
+resistencia=200
+Agarrable=1
+IndexAbierta=421
+IndexCerrada=422
+IndexCerradaLlave=423
+
+[OBJ422]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=51
+resistencia=200
+Agarrable=1
+IndexAbierta=421
+IndexCerrada=422
+IndexCerradaLlave=423
+
+[OBJ423]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=51
+resistencia=200
+Agarrable=1
+IndexAbierta=421
+IndexCerrada=422
+IndexCerradaLlave=423
+
+[OBJ424]
+Name=Llave casa 2 de Lindos
+Info=Llave casa 2 de Lindos
+GrhIndex =509
+ObjType=9
+Clave=51
+Valor=40000
+
+'<<<<< CASA 3 >>>>>>>>
+[OBJ425]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=52
+resistencia=200
+Agarrable=1
+IndexAbierta=425
+IndexCerrada=426
+IndexCerradaLlave=427
+
+[OBJ426]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=52
+resistencia=200
+Agarrable=1
+IndexAbierta=425
+IndexCerrada=426
+IndexCerradaLlave=427
+
+[OBJ427]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=52
+resistencia=200
+Agarrable=1
+IndexAbierta=425
+IndexCerrada=426
+IndexCerradaLlave=427
+
+[OBJ428]
+Name=Llave casa 3 de Lindos
+Info=Llave casa 3 de Lindos
+GrhIndex =509
+ObjType=9
+Clave=52
+Valor=40000
+
+
+'<<<<< CASA 4 >>>>>>>>
+[OBJ429]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=53
+resistencia=200
+Agarrable=1
+IndexAbierta=429
+IndexCerrada=430
+IndexCerradaLlave=431
+
+[OBJ430]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=53
+resistencia=200
+Agarrable=1
+IndexAbierta=429
+IndexCerrada=430
+IndexCerradaLlave=431
+
+[OBJ431]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=53
+resistencia=200
+Agarrable=1
+IndexAbierta=429
+IndexCerrada=430
+IndexCerradaLlave=431
+
+[OBJ432]
+Name=Llave casa 4 de Lindos
+Info=Llave casa 4 de Lindos
+GrhIndex =509
+ObjType=9
+Clave=53
+Valor=40000
+
+'<<<<< CASA 5 >>>>>>>>
+[OBJ433]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=54
+resistencia=200
+Agarrable=1
+IndexAbierta=433
+IndexCerrada=434
+IndexCerradaLlave=435
+
+[OBJ434]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=54
+resistencia=200
+Agarrable=1
+IndexAbierta=433
+IndexCerrada=434
+IndexCerradaLlave=435
+
+[OBJ435]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=54
+resistencia=200
+Agarrable=1
+IndexAbierta=433
+IndexCerrada=434
+IndexCerradaLlave=435
+
+[OBJ436]
+Name=Llave casa 5 de Lindos
+Info=Llave casa 5 de Lindos
+GrhIndex =509
+ObjType=9
+Clave=54
+Valor=40000
+
+'<<<<< CASA 6 >>>>>>>>
+[OBJ437]
+Name=Puerta de madera abierta
+GrhIndex =5592
+ObjType=6
+abierta=0
+llave=0
+clave=55
+resistencia=200
+Agarrable=1
+IndexAbierta=437
+IndexCerrada=438
+IndexCerradaLlave=439
+
+[OBJ438]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=0
+clave=55
+resistencia=200
+Agarrable=1
+IndexAbierta=437
+IndexCerrada=438
+IndexCerradaLlave=439
+
+[OBJ439]
+Name=Puerta de madera cerrada
+GrhIndex=5593
+ObjType=6
+abierta=1
+llave=1
+clave=55
+resistencia=200
+Agarrable=1
+IndexAbierta=437
+IndexCerrada=438
+IndexCerradaLlave=439
+
+[OBJ440]
+Name=Llave casa 6 de Lindos
+Info=Llave casa 6 de Lindos
+GrhIndex =509
+ObjType=9
+Clave=55
+Valor=40000
+
+'<<<<< Abadia >>>>>>>>
+[OBJ441]
+Name=Puerta de madera abierta
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=56
+resistencia=200
+Agarrable=1
+IndexAbierta=441
+IndexCerrada=442
+IndexCerradaLlave=443
+
+[OBJ442]
+Name=Puerta de madera cerrada
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=56
+resistencia=200
+Agarrable=1
+IndexAbierta=441
+IndexCerrada=442
+IndexCerradaLlave=443
+
+[OBJ443]
+Name=Puerta de madera cerrada
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=56
+resistencia=200
+Agarrable=1
+IndexAbierta=441
+IndexCerrada=442
+IndexCerradaLlave=443
+
+[OBJ444]
+Name=Llave Abadia de Lindos
+Info=Llave Abadia de Lindos
+GrhIndex =509
+ObjType=9
+Clave=56
+Valor=340000
+
+'<<<<< Vault Abadia >>>>>>>>
+[OBJ445]
+Name=Puerta de madera abierta
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=57
+resistencia=200
+Agarrable=1
+IndexAbierta=445
+IndexCerrada=446
+IndexCerradaLlave=447
+
+[OBJ446]
+Name=Puerta de madera cerrada
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=57
+resistencia=200
+Agarrable=1
+IndexAbierta=445
+IndexCerrada=446
+IndexCerradaLlave=447
+
+[OBJ447]
+Name=Puerta de madera cerrada
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=57
+resistencia=200
+Agarrable=1
+IndexAbierta=445
+IndexCerrada=446
+IndexCerradaLlave=447
+
+[OBJ448]
+Name=Llave Vault de la Abadia de Lindos
+Info=Llave Vault de la Abadia de Lindos
+GrhIndex =509
+ObjType=9
+Clave=57
+Valor=0
+
+
+'<<<<< PRISION BANDERBILL >>>>>>>>
+[OBJ449]
+Name=Puerta de madera abierta
+GrhIndex =9202
+ObjType=6
+abierta=0
+llave=0
+clave=58
+resistencia=200
+Agarrable=1
+IndexAbierta=449
+IndexCerrada=450
+IndexCerradaLlave=451
+
+[OBJ450]
+Name=Puerta de madera cerrada
+GrhIndex=9196
+ObjType=6
+abierta=1
+llave=0
+clave=58
+resistencia=200
+Agarrable=1
+IndexAbierta=449
+IndexCerrada=450
+IndexCerradaLlave=451
+
+[OBJ451]
+Name=Puerta de madera cerrada
+GrhIndex=9196
+ObjType=6
+abierta=1
+llave=1
+clave=58
+resistencia=200
+Agarrable=1
+IndexAbierta=449
+IndexCerrada=450
+IndexCerradaLlave=451
+
+[OBJ452]
+Name=Llave prision de Banderbill
+Info=Llave prision de Banderbill
+GrhIndex =509
+ObjType=9
+Clave=58
+Valor=0
+
+[OBJ453]
+Name=Foro
+GrhIndex=529
+ObjType=10
+ID=Prision
+Agarrable=1
+
+[OBJ454]
+Name=Foro
+GrhIndex=529
+ObjType=10
+ID=Lindos
+Agarrable=1
+
+[OBJ455]
+Name=Foro
+GrhIndex=529
+ObjType=10
+ID=Abadia
+Agarrable=1
+
+[OBJ456]
+Name=Teleport a Lindos
+GrhIndex=669
+ObjType=19
+Agarrable=1
+
+[OBJ457]
+Name=Cartel
+Info=Prision 1
+GrhIndex =718
+VGrande=501
+ObjType=8
+Texto=Prision
+Agarrable=1
+
+[OBJ458]
+Name=Cartel
+Info=Prision 2
+GrhIndex =720
+VGrande=501
+ObjType=8
+Texto=Prision
+Agarrable=1
+
+[OBJ459]
+Name=Cartel
+Info=Abadia
+GrhIndex =721
+VGrande=501
+ObjType=8
+Texto=Abadia de Lindos
+Agarrable=1
+
+[OBJ460]
+Name=Daga (Newbies)
+GrhIndex=510
+Objtype=2
+MinHIT=1
+MaxHIT=3
+Valor=20
+Anim=11
+Apuñala=1
+LingH=5
+SkHerreria=10
+newbie=1
+
+'Repone HP
+[OBJ461]
+Name=Pocion roja (Newbies)
+GrhIndex=542
+ObjType=11
+TipoPocion=3
+MaxModificador=30
+MinModificador=30
+Vendible=0
+newbie=1
+
+'Mod Fuerza
+[OBJ462]
+Name=Pocion verde (Newbies)
+GrhIndex=543
+ObjType=11
+TipoPocion=2
+MaxModificador=5
+MinModificador=1
+Vendible=0
+Valor=300
+DuracionEfecto=1000
+newbie=1
+
+[OBJ463]
+Name=Vestimentas comunes (Newbies)
+GrhIndex=527
+ObjType=3
+NumRopaje=1
+MAXDEF=0
+MINDEF=0
+newbie=1
+
+
+[OBJ464]
+Name=Vestimentas comunes (Newbies)
+GrhIndex=528
+ObjType=3
+NumRopaje=2
+MAXDEF=0
+MINDEF=0
+newbie=1
+
+[OBJ465]
+Name=Vestimentas comunes (Newbies)
+GrhIndex=535
+ObjType=3
+NumRopaje=3
+MAXDEF=0
+MINDEF=0
+newbie=1
+
+[OBJ466]
+Name=Ropa de enano (Newbies)
+GrhIndex=658
+NumRopaje=52
+ObjType=3
+MAXDEF=1
+MINDEF=1
+RazaEnana=1
+newbie=1
+
+[OBJ467]
+Name=Manzana Roja (Newbies)
+GrhIndex=506
+ObjType=1
+MinHAM=10
+newbie=1
+
+[OBJ468]
+Name=Botella de agua (Newbies)
+GrhIndex=537
+ObjType=13
+MinST=3
+MinAgu=30
+newbie=1
+
+[OBJ469]
+Name=Laud
+GrhIndex=685
+Objtype=26
+Valor=558
+SND1=49
+SND2=49
+SND3=49
+MinInt=16
+SkCarpinteria=80
+Madera=1000
+
+[OBJ470]
+Name=Fuerza
+GrhIndex=609
+Valor=12050
+Crucial=1
+HechizoIndex=20
+Objtype=24
+
+[OBJ471]
+Name=Debilidad
+GrhIndex=609
+Valor=13450
+Crucial=1
+HechizoIndex=21
+Objtype=24
+
+[OBJ472]
+Name=Palmera
+GrhIndex=735
+Objtype=4
+Agarrable=1
+
+[OBJ473]
+Name=Flor
+GrhIndex=731
+ObjType=30
+
+[OBJ474]
+Name=Fragata
+GrhIndex=749
+ObjType=31
+SkCarpinteria=35
+Madera=10000
+valor=50000
+NumRopaje=84
+MinSkill=30
+MinHIT=10
+MaxHIT=25
+MINDEF=5
+MAXDEF=10
+
+[OBJ475]
+Name=Fragata reforzada
+GrhIndex=749
+ObjType=31
+SkCarpinteria=65
+Madera=20000
+valor=75000
+NumRopaje=85
+MinSkill=40
+MinHIT=25
+MaxHIT=45
+MINDEF=10
+MAXDEF=20
+
+[OBJ476]
+Name=Fragata de guerra
+GrhIndex=749
+ObjType=31
+SkCarpinteria=80
+Madera=30000
+valor=100000
+NumRopaje=86
+MinSkill=50
+MinHIT=45
+MaxHIT=105
+MINDEF=20
+MAXDEF=30
+
+[OBJ477]
+Name=Fragata fantasmal
+GrhIndex=749
+ObjType=31
+Madera=0
+valor=0
+NumRopaje=87
+MinSkill=40
+
+[OBJ478]
+Name=Arco simple
+GrhIndex=750
+Objtype=2
+MinHIT=2
+MaxHIT=10
+Valor=120
+Anim=7
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="CHAMAN"
+SkCarpinteria=20
+Madera=42
+Proyectil=1
+Municiones=1
+
+[OBJ479]
+Name=Arco compuesto
+Vendible=0
+GrhIndex=751
+Objtype=2
+MinHIT=6
+MaxHIT=20
+Valor=1400
+Anim=7
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="CHAMAN"
+SkCarpinteria=95
+Madera=450
+Proyectil=1
+Municiones=1
+
+[OBJ480]
+Name=Flecha
+GrhIndex=752
+Objtype=32
+MinHIT=1
+MaxHIT=8
+Valor=1
+CP1="MAGO"
+SkCarpinteria=20
+Madera=1
+
+[OBJ481]
+Name=Armadura de Dragón (Hombre)
+GrhIndex=756
+NumRopaje=89
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+
+
+[OBJ482]
+Name=Armadura de Dragón (Mujer)
+GrhIndex=757
+NumRopaje=44
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Mujer=1
+SkHerreria=100
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+
+
+
+[OBJ483]
+Name=Armadura de Dragón (Enano/Enana)
+GrhIndex=758
+NumRopaje=91
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+
+
+[OBJ484]
+Name=Armadura de herrero
+GrhIndex=760
+NumRopaje=93
+ObjType=3
+MAXDEF=5
+MINDEF=3
+Valor=4000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="CARPINTERO"
+CP10="PALADIN"
+LingH=58
+LingP=0
+LingO=0
+SkHerreria=50
+
+[OBJ485]
+Name=Armadura Legendaria
+GrhIndex=761
+NumRopaje=94
+ObjType=3
+MAXDEF=20
+MINDEF=17
+Valor=50000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=200
+LingO=400
+SkHerreria=100
+
+
+[OBJ486]
+Name=Ropa de Enano
+GrhIndex=762
+NumRopaje=95
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=50
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+RazaEnana=1
+Crucial=1
+
+[OBJ487]
+Name=Dama de las Tinieblas
+GrhIndex=763
+NumRopaje=96
+ObjType=3
+MAXDEF=20
+MINDEF=17
+Valor=50000
+Mujer=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=200
+LingO=400
+SkHerreria=100
+
+
+[OBJ488]
+Name=White Lady
+GrhIndex=764
+NumRopaje=97
+ObjType=3
+MAXDEF=5
+MINDEF=5
+Valor=3000
+Mujer=1
+Crucial=1
+
+
+[OBJ489]
+Name=Armadura placas azul
+GrhIndex=765
+NumRopaje=98
+ObjType=3
+MAXDEF=16
+MINDEF=11
+Valor=28000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=542
+LingP=200
+LingO=0
+SkHerreria=80
+
+[OBJ490]
+Name=Ropa de minero
+GrhIndex=766
+NumRopaje=100
+ObjType=10
+MAXDEF=6
+MINDEF=1
+Valor=7000
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Crucial=1
+
+[OBJ491]
+Name=Túnica de clerigo
+GrhIndex=767
+NumRopaje=101
+ObjType=3
+MAXDEF=10
+MINDEF=8
+Valor=16000
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Crucial=1
+
+[OBJ493]
+Name=Armadura de Placas Roja (Mujer)
+GrhIndex=769
+NumRopaje=103
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=24000
+Mujer=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=465
+LingP=200
+LingO=0
+SkHerreria=76
+
+[OBJ495]
+Name=Armadura Escarlata
+GrhIndex=771
+NumRopaje=105
+ObjType=3
+MAXDEF=18
+MINDEF=14
+Valor=36000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=750
+LingP=260
+LingO=0
+SkHerreria=100
+
+[OBJ496]
+Name=Armadura de la Ciénaga  
+GrhIndex=772
+NumRopaje=106
+ObjType=3
+MAXDEF=17
+MINDEF=12
+Valor=30000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=581
+LingP=200
+LingO=0
+SkHerreria=85
+
+[OBJ497]
+Name=Armadura de placas de gala
+GrhIndex=773
+NumRopaje=107
+ObjType=3
+MAXDEF=16
+MINDEF=11
+Valor=28000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=542
+LingP=100
+LingO=0
+SkHerreria=80
+
+[OBJ499]
+Name=Cotas de Malla (Mujer)
+GrhIndex=775
+NumRopaje=109
+ObjType=3
+MAXDEF=8
+MINDEF=4
+Valor=15000
+Mujer=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP4="MAGO"
+CP5="DRUIDA"
+CP6="BARDO"
+CP7="LEÑADOR"
+CP8="HERRERO"
+CP9="CARPINTERO"
+LingH=290
+LingP=100
+LingO=0
+SkHerreria=65
+
+
+[OBJ500]
+Name=Armadura Bruñida (Enanos/Gnomos)
+GrhIndex=776
+NumRopaje=110
+ObjType=3
+MAXDEF=17
+MINDEF=12
+Valor=30000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=581
+LingP=200
+LingO=0
+SkHerreria=85
+
+[OBJ501]
+Name=Ropa de Campesino (H/E/EO-H)
+GrhIndex=777
+NumRopaje=111
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Crucial=1
+
+[OBJ502]
+Name=Ropa de Campesino (E/G-H/M)
+GrhIndex=778
+NumRopaje=112
+ObjType=3
+MAXDEF=3
+MINDEF=1
+Valor=200
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+RazaEnana=1
+Crucial=1
+
+[OBJ503]
+Name=Trampa Visual (H/E/EO-H)
+GrhIndex=779
+NumRopaje=113
+ObjType=3
+MAXDEF=18
+MINDEF=14
+Valor=36000
+Mujer=1
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Crucial=1
+
+[OBJ504]
+Name=Ropa Común (H/E/EO-M)
+GrhIndex=780
+NumRopaje=114
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=100
+CP1="SASTRE"
+CP2="PIRATA"
+Mujer=1
+Crucial=1
+
+[OBJ505]
+Name=Ropa Común (H/E/EO-M)
+GrhIndex=781
+NumRopaje=115
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=100
+CP1="SASTRE"
+CP2="PIRATA"
+Mujer=1
+Crucial=1
+
+[OBJ506]
+Name=Ropa Común (H/E/EO-M)
+GrhIndex=782
+NumRopaje=116
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=100
+CP1="SASTRE"
+CP2="PIRATA"
+Mujer=1
+Crucial=1
+
+[OBJ507]
+Name=Ropa Común Ovispo (E/G-H)
+GrhIndex=783
+NumRopaje=117
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=100
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+RazaEnana=1
+Crucial=1
+
+[OBJ508]
+Name=Ropa Estuaria (H/E/EO-M)
+GrhIndex=784
+NumRopaje=118
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Mujer=1
+Crucial=1
+
+[OBJ510]
+Name=Vestido Indulgente (H/E/EO-M)
+GrhIndex=786
+NumRopaje=120
+ObjType=3
+MAXDEF=8
+MINDEF=5
+Valor=13000
+Mujer=1
+Crucial=1
+
+[OBJ511]
+Name=Vestido De Novia Sensual (H/E-M)
+GrhIndex=19602
+NumRopaje=121
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+Mujer=1
+Crucial=1
+Real=1
+
+[OBJ512]
+Name=Vestido Calipso (E/G-M)
+GrhIndex=789
+NumRopaje=123
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+CP1="GUERRERO"
+Mujer=1
+RazaEnana=1
+Crucial=1
+
+[OBJ513]
+Name=Vestido de Bruja (H/E-M)
+GrhIndex=790
+NumRopaje=124
+ObjType=3
+MAXDEF=10
+MINDEF=6
+Valor=18000
+CP1="GUERRERO"
+Mujer=1
+Crucial=1
+
+[OBJ514]
+Name=Vestido de Bruja (EO-M)
+GrhIndex=791
+NumRopaje=125
+ObjType=3
+MAXDEF=10
+MINDEF=6
+Valor=18000
+CP1="GUERRERO"
+Mujer=1
+Crucial=1
+
+[OBJ515]
+Name=Ropa Legendaria (H/E/EO-H)  
+GrhIndex=792
+NumRopaje=126
+ObjType=3
+MAXDEF=3
+MINDEF=2
+Valor=2400
+Crucial=1
+
+[OBJ519]
+Name=Túnica Legendaria (H/E/EO-M/H)
+GrhIndex=796
+NumRopaje=130
+ObjType=3
+MAXDEF=12
+MINDEF=10
+Valor=20000
+CP1="GUERRERO"
+Crucial=1
+
+[OBJ524]
+Name=Tunica Roja(G-H/M)
+GrhIndex=801
+NumRopaje=135
+ObjType=3
+MAXDEF=9
+MINDEF=7
+Valor=15000
+RazaEnana=1
+Crucial=1
+
+[OBJ525]
+Name=Tunica Roja combinada(G-H)
+GrhIndex=802
+NumRopaje=136
+ObjType=3
+MAXDEF=9
+MINDEF=7
+Valor=15000
+RazaEnana=1
+Crucial=1
+
+[OBJ526]
+Name=Tunica Roja combinada(G-M)
+GrhIndex=803
+NumRopaje=137
+ObjType=3
+MAXDEF=9
+MINDEF=7
+Valor=15000
+RazaEnana=1
+Mujer=1
+Crucial=1
+
+[OBJ527]
+Name=Ropa común (E/G-M)
+GrhIndex=804
+NumRopaje=138
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+RazaEnana=1
+Mujer=1
+Crucial=1
+
+[OBJ527]
+Name=Ropa de cuero (E/G-M)
+GrhIndex=805
+NumRopaje=139
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=100
+RazaEnana=1
+Mujer=1
+Crucial=1
+
+[OBJ528]
+Name=Túnica (H/EL/ELO-H/M)
+GrhIndex=806
+NumRopaje=140
+ObjType=3
+MAXDEF=8
+MINDEF=5
+Valor=6000
+CP1="GUERRERO"
+Crucial=1
+
+[OBJ529]
+Name=Armadura cuero (H/EL/ELO-M)
+GrhIndex=807
+NumRopaje=142
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Mujer=1
+Crucial=1
+
+[OBJ530]
+Name=Inmovilizar
+GrhIndex=609
+Valor=30000
+Crucial=1
+HechizoIndex=24
+Objtype=24
+Crucial=1
+
+[OBJ531]
+Name=Descarga diavolica
+GrhIndex=609
+Valor=60000
+Crucial=1
+HechizoIndex=23
+Objtype=24
+
+[OBJ532]
+Name=Apocalipsis
+GrhIndex=609
+Valor=400000
+Crucial=1
+HechizoIndex=25
+Objtype=24
+
+[OBJ533]
+Name=Botella agua
+GrhIndex=850
+ObjType=34
+MinAgu=90
+MinST=5
+Vendible=0
+Valor=15
+IndexAbierta=533
+IndexCerrada=534
+
+[OBJ534]
+Name=Botella vacia
+GrhIndex=849
+ObjType=33
+Valor=10
+IndexAbierta=533
+IndexCerrada=534
+Crucial=1
+
+[OBJ535]
+Name=Tumba de Gulfas Morgolock
+GrhIndex =513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Gulfas Morgolock.
+Agarrable=1
+
+[OBJ536]
+Name=Invocar elemental de fuego
+GrhIndex=609
+Valor=80000
+Crucial=1
+HechizoIndex=26
+Objtype=24
+
+[OBJ537]
+Name=Invocar elemental de agua
+GrhIndex=609
+Valor=80000
+Crucial=1
+HechizoIndex=27
+Objtype=24
+
+[OBJ538]
+Name=Invocar elemental de tierra
+GrhIndex=609
+Valor=80000
+Crucial=1
+HechizoIndex=28
+Objtype=24
+
+[OBJ539]
+Name=Implorar ayuda
+GrhIndex=609
+Valor=90000
+Crucial=1
+HechizoIndex=29
+Objtype=24
+
+[OBJ540]
+Name=Flauta
+GrhIndex=686
+Objtype=26
+Valor=558
+SND1=51
+SND2=51
+SND3=51
+MinInt=16
+SkCarpinteria=80
+Madera=1000
+
+[OBJ541]
+Name=Ceguera
+GrhIndex=609
+Valor=60000
+Crucial=1
+HechizoIndex=30
+Objtype=24
+
+[OBJ542]
+Name=Estupidez
+GrhIndex=609
+Valor=2400
+Crucial=1
+HechizoIndex=31
+Objtype=24
+
+[OBJ543]
+Name=Red de pesca
+GrhIndex=844
+ObjType=18
+Valor= 500
+Crucial=1
+
+[OBJ544]
+Name=Pez
+GrhIndex=845
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ545]
+Name=Pez
+GrhIndex=846
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ546]
+Name=Pez
+GrhIndex=847
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ547]
+Name=Cartel
+Info=Dungeon Veriil
+GrhIndex =863
+VGrande=501
+ObjType=8
+Texto=¡¡Cuidado!! El Dúngeon de Veriil es uno de los lugares más peligrosos de todo Argentum; pocos son los aventureros que logran salir con vida de el.
+Agarrable=1
+
+[OBJ548]
+Name=Cartel
+Info=Arghâl
+GrhIndex =864
+VGrande=501
+ObjType=8
+Texto=¡¡¡Bienvenidos a Arghâl!!! 
+Agarrable=1
+
+[OBJ498]
+Name=Ropa Novia Hobbit
+GrhIndex=18902
+NumRopaje=251
+ObjType=3
+MAXDEF=8
+MINDEF=1
+Valor=0
+RazaEnana=1
+
+
+[OBJ520]
+Name=Armadura Imperial 5ª Jerarquia (Mujer)(H/E/EO-M)
+GrhIndex=797
+NumRopaje=131
+ObjType=3
+MAXDEF=22
+MINDEF=19
+Valor=0
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Mujer=1
+Real=1
+
+
+[OBJ521]
+Name=Aprendiz Imperial 1ª Jerarquia (Mujer) (H/EL/ELO-M)
+GrhIndex=798
+NumRopaje=132
+ObjType=3
+MAXDEF=18
+MINDEF=16
+Valor=0
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Mujer=1
+Real=1
+
+[OBJ549]
+Name=Espada Mata dragones
+GrhIndex=716
+Objtype=2
+Subtipo=1
+MinHIT=125
+MaxHIT=250
+Valor=75000
+Anim=8
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="PESCADOR"
+CP8="MINERO"
+CP9="CARPINTERO"
+CP10="HERRERO"
+CP11="CAZADOR"
+CP12="LEÑADOR"
+CP13="ARQUERO"
+CP14="ALDEANO"
+CP15="COCINERO"
+CP16="CAMARERO"
+CP17="CHAMAN"
+CP18="WILORD"
+LingH=500
+LingP=400
+LingO=300
+SkHerreria=100
+
+[OBJ550]
+Name=Llama de Venus
+GrhIndex=609
+Valor=5000000
+Crucial=1
+HechizoIndex=32
+Objtype=24
+
+[OBJ551]
+Name=Santus divina
+GrhIndex=609
+Valor=800000
+Crucial=1
+HechizoIndex=33
+Objtype=24
+
+[OBJ552]
+Name=Armadura de GM
+GrhIndex=806
+NumRopaje=140
+ObjType=3
+MAXDEF=1000
+MINDEF=999
+Valor=0
+Caos=1
+
+[OBJ556]
+Name=Tunica de GM
+GrhIndex=767
+NumRopaje=101
+ObjType=3
+MAXDEF=1000
+MINDEF=999
+Valor=0
+Crucial=1
+Caos=1
+
+[OBJ558]
+Name=Pescado
+GrhIndex=998
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ559]
+Name=Capa de Rey
+GrhIndex=689
+NumRopaje=63
+ObjType=3
+MAXDEF=30
+MINDEF=22
+Valor=150000
+
+[OBJ560]
+Name=Tunica Mago Acul
+GrhIndex=656
+NumRopaje=49
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=30000
+
+[OBJ561]
+Name=Tunica Mago Roja
+GrhIndex=657
+NumRopaje=50
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=30000
+
+[OBJ562]
+Name=Ropa Campesino
+GrhIndex=766
+NumRopaje=100
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=150
+
+[OBJ563]
+Name=Ropa Campesino
+GrhIndex=766
+NumRopaje=100
+ObjType=3
+MAXDEF=2
+MINDEF=1
+Valor=150
+
+[OBJ564]
+Name=Flecha + 1
+GrhIndex=755
+Objtype=32
+MinHIT=1
+MaxHIT=4
+Valor=3
+CP1="MAGO"
+SkCarpinteria=30
+Madera=3
+
+[OBJ565]
+Name=Flecha + 2
+GrhIndex=753
+Objtype=32
+MinHIT=1
+MaxHIT=5
+Valor=6
+CP1="MAGO"
+SkCarpinteria=40
+Madera=5
+
+[OBJ566]
+Name=Flecha + 3
+GrhIndex=754
+Objtype=32
+MinHIT=1
+MaxHIT=6
+Valor=12
+CP1="MAGO"
+SkCarpinteria=50
+Madera=7
+
+[OBJ567]
+Name=luchacos
+GrhIndex=590
+Objtype=2
+MinHIT=5
+MaxHIT=10
+Valor=5000
+Anim=5
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+
+[OBJ568]
+Name=Curo Mundial
+GrhIndex=609
+Valor=800000
+Crucial=1
+HechizoIndex=35
+Objtype=24
+
+'<--------------------CASAS de Arghâl----------------->
+'<--------------------CASA 1 de Arghâl----------------->
+
+[OBJ569]
+Name=Llave casa 1 de Arghâl
+Info=Llave casa 1 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=70
+Valor=600000
+
+[OBJ570]
+Name=Puerta A casa 1 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=70
+resistencia=200
+Agarrable=1
+IndexAbierta=570
+IndexCerrada=571
+IndexCerradaLlave=572
+
+[OBJ571]
+Name=Puerta C casa 1 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=70
+resistencia=200
+Agarrable=1
+IndexAbierta=570
+IndexCerrada=571
+IndexCerradaLlave=572
+
+[OBJ572]
+Name=Puerta C casa 1 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=70
+resistencia=200
+Agarrable=1
+IndexAbierta=570
+IndexCerrada=571
+IndexCerradaLlave=572
+
+'<--------------------CASA 2 de Arghâl----------------->
+[OBJ573]
+Name=Llave casa 2 de Arghâl
+Info=Llave casa 2 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=71
+Valor=600000
+
+[OBJ574]
+Name=Puerta A casa 2 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=71
+resistencia=200
+Agarrable=1
+IndexAbierta=574
+IndexCerrada=575
+IndexCerradaLlave=576
+
+[OBJ575]
+Name=Puerta C casa 2 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=71
+resistencia=200
+Agarrable=1
+IndexAbierta=574
+IndexCerrada=575
+IndexCerradaLlave=576
+
+[OBJ576]
+Name=Puerta C casa 2 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=71
+resistencia=200
+Agarrable=1
+IndexAbierta=574
+IndexCerrada=575
+IndexCerradaLlave=576
+
+'<--------------------CASA 3 de Arghâl----------------->
+[OBJ577]
+Name=Llave casa 3 de Arghâl
+Info=Llave casa 3 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=72
+Valor=600000
+
+[OBJ578]
+Name=Puerta A casa 3 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=72
+resistencia=200
+Agarrable=1
+IndexAbierta=578
+IndexCerrada=579
+IndexCerradaLlave=580
+
+[OBJ579]
+Name=Puerta C casa 3 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=72
+resistencia=200
+Agarrable=1
+IndexAbierta=578
+IndexCerrada=579
+IndexCerradaLlave=580
+
+[OBJ580]
+Name=Puerta C casa 3 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=72
+resistencia=200
+Agarrable=1
+IndexAbierta=578
+IndexCerrada=579
+IndexCerradaLlave=580
+
+'<--------------------CASA 4 de Arghâl----------------->
+[OBJ581]
+Name=Llave casa 4 de Arghâl
+Info=Llave casa 4 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=73
+Valor=600000
+
+[OBJ582]
+Name=Puerta A casa 4 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=73
+resistencia=200
+Agarrable=1
+IndexAbierta=582
+IndexCerrada=583
+IndexCerradaLlave=584
+
+[OBJ583]
+Name=Puerta C casa 4 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=73
+resistencia=200
+Agarrable=1
+IndexAbierta=582
+IndexCerrada=583
+IndexCerradaLlave=584
+
+[OBJ584]
+Name=Puerta C casa 4 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=73
+resistencia=200
+Agarrable=1
+IndexAbierta=582
+IndexCerrada=583
+IndexCerradaLlave=584
+
+'<--------------------CASA 5 de Arghâl----------------->
+[OBJ585]
+Name=Llave casa 5 de Arghâl
+Info=Llave casa 5 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=74
+Valor=600000
+
+[OBJ586]
+Name=Puerta A casa 5 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=74
+resistencia=200
+Agarrable=1
+IndexAbierta=586
+IndexCerrada=587
+IndexCerradaLlave=588
+
+[OBJ587]
+Name=Puerta C casa 5 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=74
+resistencia=200
+Agarrable=1
+IndexAbierta=586
+IndexCerrada=587
+IndexCerradaLlave=588
+
+[OBJ588]
+Name=Puerta C casa 5 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=74
+resistencia=200
+Agarrable=1
+IndexAbierta=586
+IndexCerrada=587
+IndexCerradaLlave=588
+
+'<--------------------CASA 6 de Arghâl----------------->
+[OBJ589]
+Name=Llave casa 6 de Arghâl
+Info=Llave casa 6 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=75
+Valor=600000
+
+[OBJ590]
+Name=Puerta A casa 6 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=75
+resistencia=200
+Agarrable=1
+IndexAbierta=590
+IndexCerrada=591
+IndexCerradaLlave=592
+
+[OBJ591]
+Name=Puerta C casa 6 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=75
+resistencia=200
+Agarrable=1
+IndexAbierta=590
+IndexCerrada=591
+IndexCerradaLlave=592
+
+[OBJ592]
+Name=Puerta C casa 6 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=75
+resistencia=200
+Agarrable=1
+IndexAbierta=590
+IndexCerrada=591
+IndexCerradaLlave=592
+
+'<--------------------CASA 7 de Arghâl----------------->
+[OBJ593]
+Name=Llave casa 7 de Arghâl
+Info=Llave casa 7 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=76
+Valor=600000
+
+[OBJ594]
+Name=Puerta A casa 7 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=76
+resistencia=200
+Agarrable=1
+IndexAbierta=594
+IndexCerrada=595
+IndexCerradaLlave=596
+
+[OBJ595]
+Name=Puerta C casa 7 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=76
+resistencia=200
+Agarrable=1
+IndexAbierta=594
+IndexCerrada=595
+IndexCerradaLlave=596
+
+[OBJ596]
+Name=Puerta C casa 7 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=76
+resistencia=200
+Agarrable=1
+IndexAbierta=594
+IndexCerrada=595
+IndexCerradaLlave=596
+
+'<--------------------CASA 8 de Arghâl----------------->
+[OBJ597]
+Name=Llave casa 8 de Arghâl
+Info=Llave casa 8 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=77
+Valor=600000
+
+[OBJ598]
+Name=Puerta A casa 8 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=77
+resistencia=200
+Agarrable=1
+IndexAbierta=598
+IndexCerrada=599
+IndexCerradaLlave=600
+
+[OBJ599]
+Name=Puerta C casa 8 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=77
+resistencia=200
+Agarrable=1
+IndexAbierta=598
+IndexCerrada=599
+IndexCerradaLlave=600
+
+[OBJ600]
+Name=Puerta C casa 8 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=77
+resistencia=200
+Agarrable=1
+IndexAbierta=598
+IndexCerrada=599
+IndexCerradaLlave=600
+
+'<--------------------CASA 9 de Arghâl----------------->
+[OBJ601]
+Name=Llave casa 9 de Arghâl
+Info=Llave casa 9 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=78
+Valor=600000
+
+[OBJ602]
+Name=Puerta A casa 9 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=78
+resistencia=200
+Agarrable=1
+IndexAbierta=602
+IndexCerrada=603
+IndexCerradaLlave=604
+
+[OBJ603]
+Name=Puerta C casa 9 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=78
+resistencia=200
+Agarrable=1
+IndexAbierta=602
+IndexCerrada=603
+IndexCerradaLlave=604
+
+[OBJ604]
+Name=Puerta C casa 9 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=78
+resistencia=200
+Agarrable=1
+IndexAbierta=602
+IndexCerrada=603
+IndexCerradaLlave=604
+
+'<--------------------CASA 10 de Arghâl----------------->
+[OBJ605]
+Name=Llave casa 10 de Arghâl
+Info=Llave casa 10 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=79
+Valor=600000
+
+[OBJ606]
+Name=Puerta A casa 10 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=79
+resistencia=200
+Agarrable=1
+IndexAbierta=606
+IndexCerrada=607
+IndexCerradaLlave=608
+
+[OBJ607]
+Name=Puerta C casa 10 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=79
+resistencia=200
+Agarrable=1
+IndexAbierta=606
+IndexCerrada=607
+IndexCerradaLlave=608
+
+[OBJ608]
+Name=Puerta C casa 10 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=79
+resistencia=200
+Agarrable=1
+IndexAbierta=606
+IndexCerrada=607
+IndexCerradaLlave=608
+
+'<--------------------CASA 11 de Arghâl----------------->
+[OBJ609]
+Name=Llave casa 11 de Arghâl
+Info=Llave casa 11 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=80
+Valor=600000
+
+[OBJ610]
+Name=Puerta A casa 11 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=80
+resistencia=200
+Agarrable=1
+IndexAbierta=610
+IndexCerrada=611
+IndexCerradaLlave=612
+
+[OBJ611]
+Name=Puerta C casa 11 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=80
+resistencia=200
+Agarrable=1
+IndexAbierta=610
+IndexCerrada=611
+IndexCerradaLlave=612
+
+[OBJ612]
+Name=Puerta C casa 11 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=80
+resistencia=200
+Agarrable=1
+IndexAbierta=610
+IndexCerrada=611
+IndexCerradaLlave=612
+
+'<--------------------CASA 12 de Arghâl----------------->
+[OBJ613]
+Name=Llave casa 12 de Arghâl
+Info=Llave casa 12 de Arghâl
+GrhIndex =509
+ObjType=9
+Clave=81
+Valor=600000
+
+[OBJ614]
+Name=Puerta A casa 12 de Arghâl
+GrhIndex =8685
+ObjType=6
+abierta=0
+llave=0
+clave=81
+resistencia=200
+Agarrable=1
+IndexAbierta=614
+IndexCerrada=615
+IndexCerradaLlave=616
+
+[OBJ615]
+Name=Puerta C casa 12 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=0
+clave=81
+resistencia=200
+Agarrable=1
+IndexAbierta=614
+IndexCerrada=615
+IndexCerradaLlave=616
+
+[OBJ616]
+Name=Puerta C casa 12 de Arghâl
+GrhIndex=8684
+ObjType=6
+abierta=1
+llave=1
+clave=81
+resistencia=200
+Agarrable=1
+IndexAbierta=614
+IndexCerrada=615
+IndexCerradaLlave=616
+
+[OBJ617]
+Name=Red de pesca
+GrhIndex=844
+ObjType=18
+Valor= 500
+Crucial=1
+
+[OBJ618]
+Name=Pescado
+GrhIndex=845
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ619]
+Name=Pescado
+GrhIndex=846
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ620]
+Name=Pescado
+GrhIndex=998
+ObjType=1
+MinHam=75
+Valor=28
+
+[OBJ621]
+Name=Espada de Hielo
+GrhIndex=13414
+Objtype=2
+MinHIT=28
+MaxHIT=38
+Valor=150000
+Anim=14
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ622]
+Name=Espada de Fuego
+GrhIndex=13427
+Objtype=2
+MinHIT=33
+MaxHIT=43
+Valor=300000
+Anim=12
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ623]
+Name=Hacha de oro leñador
+GrhIndex=603
+Objtype=18
+MinHIT=10
+MaxHIT=15
+Valor=200000
+Anim=1
+Crucial=1
+LingH=1000
+LingO=500
+SkHerreria=100
+real=1
+
+[OBJ624]
+Name=Info AOSpain
+GrhIndex =513
+VGrande=514
+ObjType=8
+Texto=Servidor Oficial de Españ - Versión Propia 1.0 by AOSpain Beta 1, Espero que disfrutes del servidor tanto como nosotros haciendolo :D
+Agarrable=1
+
+[OBJ625]
+Name=Info AOSpain
+GrhIndex =513
+VGrande=514
+ObjType=8
+Texto=--
+Agarrable=1
+
+[OBJ626]'pendiente
+Name=Armadura Asesinos
+GrhIndex=640
+NumRopaje=230
+ObjType=3
+MAXDEF=14
+MINDEF=10
+Valor=20000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="MINERO"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PALADIN"
+CP9="HERRERO"
+CP10="CARPINTERO"
+CP11="PESCADOR"
+CP12="GUERRERO"
+
+[OBJ627]
+Name=Espada diabolica
+GrhIndex=13415
+Objtype=2
+MinHIT=38
+MaxHIT=48
+Valor=500000
+Anim=12
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ628]
+Name=Espada de Asesino
+GrhIndex=13426
+Objtype=2
+MinHIT=18
+MaxHIT=28
+Apuñala=1
+Valor=100000
+Anim=1
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="MAGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+CP23="CHAMAN"
+
+[OBJ629]
+Name=Espada de Asesino Sagrada
+GrhIndex=13406
+Objtype=2
+MinHIT=40
+MaxHIT=50
+Valor=1000000
+Anim=12
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="MAGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+CP23="CHAMAN"
+Caos=1
+
+[OBJ630]
+Name=Espada Sagrada
+GrhIndex=13407
+Objtype=2
+MinHIT=40
+MaxHIT=50
+Valor=1000000
+Anim=12
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+Caos=1
+
+[OBJ632]
+Name=ropa clan cadaver
+GrhIndex=13476
+NumRopaje=165
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=4000
+Crucial=1
+
+[OBJ633]
+Name=Armadura india enano
+GrhIndex=13474
+NumRopaje=166
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=16000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+RazaEnana=1
+
+[OBJ634]
+Name=tunica neptuno
+GrhIndex=13480
+NumRopaje=167
+ObjType=3
+MAXDEF=1000
+MINDEF=1000
+Valor=0
+Crucial=1
+
+[OBJ638]
+Name=armadura cazador gris
+GrhIndex=13475
+NumRopaje=171
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=2400
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+
+[OBJ639]
+Name=armadura de hojas (mujer)
+GrhIndex=13468
+NumRopaje=172
+ObjType=3
+MAXDEF=18
+MINDEF=12
+Valor=35000
+Crucial=1
+mujer=1
+
+[OBJ640]
+Name=Boluko
+GrhIndex=13405
+Objtype=2
+MinHIT=1
+MaxHIT=8
+Valor=200
+Anim=10
+
+[OBJ641]
+Name=lanza
+GrhIndex=13404
+Objtype=2
+MinHIT=10
+MaxHIT=20
+Valor=12000
+Anim=10
+
+[OBJ642]
+Name=Arco medieval
+Vendible=0
+GrhIndex=13413
+Objtype=2
+MinHIT=10
+MaxHIT=25
+Valor=20000
+Anim=7
+CP1="MAGO"
+CP2="DRUIDA"
+CP2="CHAMAN"
+Proyectil=1
+
+[OBJ643]
+Name=Espada de zeus
+GrhIndex=13409
+Objtype=2
+MinHIT=24
+MaxHIT=35
+Valor=200000
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ644]
+Name=hacha de plata
+GrhIndex=13412
+Objtype=2
+MinHIT=9
+MaxHIT=12
+Valor=8000
+Anim=1
+
+[OBJ645]
+Name=Escudo forjado
+Anim=1
+GrhIndex=13410
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=30
+MINDEF=25
+Valor=7500
+CP1="MAGO"
+CP2="DRUIDA"
+
+[OBJ646]
+Name=Escudo real
+Anim=6
+GrhIndex=13425
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=35
+MINDEF=30
+Valor=15000
+CP1="MAGO"
+CP2="DRUIDA"
+
+[OBJ647]
+Name=espada doble filos
+GrhIndex=13419
+Objtype=2
+MinHIT=4
+MaxHIT=10
+Valor=4000
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ648]
+Name=Casco de oro imperial
+Anim=4
+GrhIndex=13416
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=30
+MINDEF=25
+Valor=10000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+
+[OBJ649]
+Name=Puñal de rey
+GrhIndex=13417
+Objtype=2
+MinHIT=10
+MaxHIT=15
+Valor=200000
+Anim=2
+Plus=1
+Apuñala=1
+
+
+[OBJ650]
+Name=Espada de oro imperial
+GrhIndex=13418
+Objtype=2
+MinHIT=38
+MaxHIT=45
+Valor=500000
+Anim=13
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ651]
+Name=daga de asesino
+GrhIndex=13423
+Objtype=2
+MinHIT=10
+MaxHIT=15
+Valor=10000
+Anim=11
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="MAGO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+CP23="CHAMAN"
+Crucial=1
+Plus=1
+Apuñala=1
+
+[OBJ652]
+Name=Escudo celestial
+Anim=3
+GrhIndex=13420
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=30
+MINDEF=25
+Valor=10000
+CP1="MAGO"
+CP2="DRUIDA"
+
+[OBJ653]
+Name=Escudo de oro imperial
+Anim=4
+GrhIndex=13421
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=40
+MINDEF=35
+Valor=20000
+CP1="MAGO"
+CP2="DRUIDA"
+
+[OBJ655]
+Name=Armadura oro imperial de enanos
+GrhIndex=13470
+NumRopaje=45
+ObjType=3
+MAXDEF=30
+MINDEF=20
+Valor=100000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+RazaEnana=1
+
+[OBJ656]
+Name=Armadura de oro imperial
+GrhIndex=13471
+NumRopaje=181
+ObjType=3
+MAXDEF=30
+MINDEF=20
+Valor=100000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+
+[OBJ657] 
+Name=Altar
+Info=Altar
+GrhIndex=13091
+Objtype=20
+valor=20000
+SkCarpinteria=100
+Madera=10000
+
+[OBJ658]
+Name=Daga ASz
+GrhIndex=510
+Objtype=2
+MinHIT=1
+MaxHIT=1
+Valor=20
+Anim=2
+Crucial=1
+Apuñala=1
+LingH=5
+SkHerreria=10
+
+[OBJ659]
+Name=Anillo de mago
+Anim=2
+GrhIndex=13422
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=2
+MINDEF=1
+Valor=10000
+CP1="GUERRERO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="CARPINTERO"
+CP7="CAZADOR"
+CP8="HERRERO"
+CP9="MINERO"
+CP10="LEÑADOR"
+CP11="PESCADOR"
+cp12="PALADIN"
+cp13="CLERIGO"
+LingH=5
+SkHerreria=20
+
+[OBJ660]
+Name=Gran Pocion amarilla
+GrhIndex=540
+ObjType=11
+TipoPocion=1
+MaxModificador=100
+MinModificador=10
+Vendible=0
+Valor=3000
+DuracionEfecto=1000
+Crucial=1
+
+'Repone Mana
+[OBJ661]
+Name=Gran Pocion Azul
+GrhIndex=541
+ObjType=11
+TipoPocion=4
+MaxModificador=3000
+MinModificador=3000
+Vendible=0
+Valor=500
+Crucial=1
+
+'Repone HP
+[OBJ662]
+Name=Gran Pocion roja
+GrhIndex=542
+ObjType=11
+TipoPocion=3
+MaxModificador=300
+MinModificador=300
+Vendible=0
+Valor=400
+Crucial=1
+
+'Mod Fuerza
+[OBJ663]
+Name=Gran Pocion verde
+GrhIndex=543
+ObjType=11
+TipoPocion=2
+MaxModificador=50
+MinModificador=10
+Vendible=0
+Valor=7000
+DuracionEfecto=1000
+Crucial=1
+
+[OBJ664]
+Name=Alianza hombre
+GrhIndex=701
+ObjType=29
+Valor=1
+Caos=1
+
+[OBJ665]
+Name=Alianza Mujer
+GrhIndex=705
+ObjType=29
+Valor=1
+
+-------------------- CASA 1 ARCADIA -----------------
+[OBJ666]
+Name=Puerta A casa Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+Clave=82
+resistencia=200
+Agarrable=1
+IndexAbierta=666
+IndexCerrada=667
+IndexCerradaLlave=668
+
+[OBJ667]
+Name=Puerta C casa Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+Clave=82
+resistencia=200
+Agarrable=1
+IndexAbierta=666
+IndexCerrada=667
+IndexCerradaLlave=668
+
+[OBJ668]
+Name=Puerta C casa Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+Clave=82
+resistencia=200
+Agarrable=1
+IndexAbierta=666
+IndexCerrada=667
+IndexCerradaLlave=668
+
+[OBJ669]
+Name=llave maestra casa arcadia
+Info=llave maestra casa arcadia
+GrhIndex =509
+ObjType=9
+Clave=44
+Valor=80000
+Caos=1
+
+[OBJ670]
+Name=Armadura de centurion Sagrada
+GrhIndex=12422
+NumRopaje=161
+ObjType=3
+MAXDEF=50
+MINDEF=35
+Valor=5000000
+Crucial=1
+Caos=1
+
+[OBJ671]
+Name=Escudo de oro Sagrado
+Anim=3
+GrhIndex=13420
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=50
+MINDEF=45
+Valor=2500000
+CP1="MAGO"
+CP2="DRUIDA"
+Real=1
+
+[OBJ672]
+Name=Casco de plata imperial
+Anim=6
+GrhIndex=13424
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=25
+MINDEF=20
+Valor=7500
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+
+[OBJ673]
+Name=Casco plata
+Anim=5
+GrhIndex=717
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=20
+MINDEF=15
+Valor=5000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+
+[OBJ674]
+Name=Casco de sangre
+Anim=7
+GrhIndex=13411
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=30
+MINDEF=35
+Valor=15000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+
+[OBJ675]
+Name=Casco de fenix
+Anim=8
+GrhIndex=15596
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=40
+MINDEF=35
+Valor=20000
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="PIRATA"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+
+[OBJ676]
+Name=corona sagrada
+Anim=9
+GrhIndex=15678
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=15
+MINDEF=10
+Valor=200000
+real=1
+
+[OBJ677]
+Name=casco sagrado
+Anim=10
+GrhIndex=15679
+NumRopaje=2
+ObjType=3
+Subtipo=1
+MAXDEF=50
+MINDEF=40
+Valor=2500000
+real=1
+
+[OBJ678]
+Name=Anillo real
+Anim=2
+GrhIndex=15680
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=2
+MINDEF=1
+Valor=10000
+real=1
+
+[OBJ679]
+Name=Anillo caos
+Anim=2
+GrhIndex=15681
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=2
+MINDEF=1
+Valor=10000
+caos=1
+
+[OBJ680]
+Name=Anillo sagrado
+Anim=2
+GrhIndex=15682
+NumRopaje=2
+ObjType=3
+Subtipo=2
+MAXDEF=2
+MINDEF=1
+Valor=10000
+real=1
+
+'<--------------------CASA 1 de Arcadia----------------->
+[OBJ681]
+Name=Llave casa 1 de Arcadia
+Info=Llave casa 1 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=82
+Valor=1500000
+
+[OBJ682]
+Name=Puerta A casa 1 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=82
+resistencia=200
+Agarrable=1
+IndexAbierta=682
+IndexCerrada=683
+IndexCerradaLlave=684
+
+[OBJ683]
+Name=Puerta C casa 1 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=82
+resistencia=200
+Agarrable=1
+IndexAbierta=682
+IndexCerrada=683
+IndexCerradaLlave=684
+
+[OBJ684]
+Name=Puerta C casa 1 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=82
+resistencia=200
+Agarrable=1
+IndexAbierta=682
+IndexCerrada=683
+IndexCerradaLlave=684
+
+'<--------------------CASA 2 de Arcadia----------------->
+[OBJ685]
+Name=Llave casa 2 de Arcadia
+Info=Llave casa 2 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=83
+Valor=1500000
+
+[OBJ686]
+Name=Puerta A casa 2 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=83
+resistencia=200
+Agarrable=1
+IndexAbierta=686
+IndexCerrada=687
+IndexCerradaLlave=688
+
+[OBJ687]
+Name=Puerta C casa 2 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=83
+resistencia=200
+Agarrable=1
+IndexAbierta=686
+IndexCerrada=687
+IndexCerradaLlave=688
+
+[OBJ688]
+Name=Puerta C casa 2 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=83
+resistencia=200
+Agarrable=1
+IndexAbierta=686
+IndexCerrada=687
+IndexCerradaLlave=688
+
+'<--------------------CASA 3 de Arcadia----------------->
+[OBJ689]
+Name=Llave casa 3 de Arcadia
+Info=Llave casa 3 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=84
+Valor=1500000
+
+[OBJ690]
+Name=Puerta A casa 3 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=84
+resistencia=200
+Agarrable=1
+IndexAbierta=690
+IndexCerrada=691
+IndexCerradaLlave=692
+
+[OBJ691]
+Name=Puerta C casa 3 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=84
+resistencia=200
+Agarrable=1
+IndexAbierta=690
+IndexCerrada=691
+IndexCerradaLlave=692
+
+[OBJ692]
+Name=Puerta C casa 3 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=84
+resistencia=200
+Agarrable=1
+IndexAbierta=690
+IndexCerrada=691
+IndexCerradaLlave=692
+
+
+'<--------------------CASA 4 de Arcadia----------------->
+[OBJ693]
+Name=Llave casa 4 de Arcadia
+Info=Llave casa 4 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=85
+Valor=1500000
+
+[OBJ694]
+Name=Puerta A casa 4 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=85
+resistencia=200
+Agarrable=1
+IndexAbierta=694
+IndexCerrada=695
+IndexCerradaLlave=696
+
+[OBJ695]
+Name=Puerta C casa 4 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=85
+resistencia=200
+Agarrable=1
+IndexAbierta=694
+IndexCerrada=695
+IndexCerradaLlave=696
+
+[OBJ696]
+Name=Puerta C casa 4 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=85
+resistencia=200
+Agarrable=1
+IndexAbierta=694
+IndexCerrada=695
+IndexCerradaLlave=696
+
+
+'<--------------------CASA 5 de Arcadia----------------->
+[OBJ697]
+Name=Llave casa 5 de Arcadia
+Info=Llave casa 5 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=86
+Valor=1500000
+
+[OBJ698]
+Name=Puerta A casa 5 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=86
+resistencia=200
+Agarrable=1
+IndexAbierta=698
+IndexCerrada=699
+IndexCerradaLlave=700
+
+[OBJ699]
+Name=Puerta C casa 5 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=86
+resistencia=200
+Agarrable=1
+IndexAbierta=698
+IndexCerrada=699
+IndexCerradaLlave=700
+
+[OBJ700]
+Name=Puerta C casa 5 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=86
+resistencia=200
+Agarrable=1
+IndexAbierta=698
+IndexCerrada=699
+IndexCerradaLlave=700
+
+'<--------------------CASA 6 de Arcadia----------------->
+[OBJ701]
+Name=Llave casa 6 de Arcadia
+Info=Llave casa 6 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=87
+Valor=1500000
+
+[OBJ702]
+Name=Puerta A casa 6 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=87
+resistencia=200
+Agarrable=1
+IndexAbierta=702
+IndexCerrada=703
+IndexCerradaLlave=704
+
+[OBJ703]
+Name=Puerta C casa 6 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=87
+resistencia=200
+Agarrable=1
+IndexAbierta=702
+IndexCerrada=703
+IndexCerradaLlave=704
+
+[OBJ704]
+Name=Puerta C casa 6 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=87
+resistencia=200
+Agarrable=1
+IndexAbierta=702
+IndexCerrada=703
+IndexCerradaLlave=704
+
+'<--------------------CASA 7 de Arcadia----------------->
+[OBJ705]
+Name=Llave casa 7 de Arcadia
+Info=Llave casa 7 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=88
+Valor=1500000
+
+[OBJ706]
+Name=Puerta A casa 7 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=88
+resistencia=200
+Agarrable=1
+IndexAbierta=706
+IndexCerrada=707
+IndexCerradaLlave=708
+
+[OBJ707]
+Name=Puerta C casa 7 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=88
+resistencia=200
+Agarrable=1
+IndexAbierta=706
+IndexCerrada=707
+IndexCerradaLlave=708
+
+[OBJ708]
+Name=Puerta C casa 7 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=88
+resistencia=200
+Agarrable=1
+IndexAbierta=706
+IndexCerrada=707
+IndexCerradaLlave=708
+
+'<--------------------CASA 8 de Arcadia----------------->
+[OBJ709]
+Name=Llave casa 8 de Arcadia
+Info=Llave casa 8 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=89
+Valor=1500000
+
+[OBJ710]
+Name=Puerta A casa 8 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=89
+resistencia=200
+Agarrable=1
+IndexAbierta=710
+IndexCerrada=711
+IndexCerradaLlave=712
+
+[OBJ711]
+Name=Puerta C casa 8 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=89
+resistencia=200
+Agarrable=1
+IndexAbierta=710
+IndexCerrada=711
+IndexCerradaLlave=712
+
+[OBJ712]
+Name=Puerta C casa 8 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=89
+resistencia=200
+Agarrable=1
+IndexAbierta=710
+IndexCerrada=711
+IndexCerradaLlave=712
+
+'<--------------------CASA 9 de Arcadia----------------->
+[OBJ713]
+Name=Llave casa 9 de Arcadia
+Info=Llave casa 9 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=90
+Valor=1500000
+
+[OBJ714]
+Name=Puerta A casa 9 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=90
+resistencia=200
+Agarrable=1
+IndexAbierta=714
+IndexCerrada=715
+IndexCerradaLlave=716
+
+[OBJ715]
+Name=Puerta C casa 9 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=90
+resistencia=200
+Agarrable=1
+IndexAbierta=714
+IndexCerrada=715
+IndexCerradaLlave=716
+
+[OBJ716]
+Name=Puerta C casa 9 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=90
+resistencia=200
+Agarrable=1
+IndexAbierta=714
+IndexCerrada=715
+IndexCerradaLlave=716
+
+
+'<--------------------CASA 10 de Arcadia----------------->
+[OBJ717]
+Name=Llave casa 10 de Arcadia
+Info=Llave casa 10 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=91
+Valor=500000
+
+[OBJ718]
+Name=Puerta A casa 10 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=91
+resistencia=200
+Agarrable=1
+IndexAbierta=718
+IndexCerrada=719
+IndexCerradaLlave=720
+
+[OBJ719]
+Name=Puerta C casa 10 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=91
+resistencia=200
+Agarrable=1
+IndexAbierta=718
+IndexCerrada=719
+IndexCerradaLlave=720
+
+[OBJ720]
+Name=Puerta C casa 10 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=91
+resistencia=200
+Agarrable=1
+IndexAbierta=718
+IndexCerrada=719
+IndexCerradaLlave=720
+
+'<--------------------CASA 11 de Arcadia----------------->
+[OBJ721]
+Name=Llave casa 11 de Arcadia
+Info=Llave casa 11 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=92
+Valor=500000
+
+[OBJ722]
+Name=Puerta A casa 11 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=92
+resistencia=200
+Agarrable=1
+IndexAbierta=722
+IndexCerrada=723
+IndexCerradaLlave=724
+
+[OBJ723]
+Name=Puerta C casa 11 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=92
+resistencia=200
+Agarrable=1
+IndexAbierta=722
+IndexCerrada=723
+IndexCerradaLlave=724
+
+[OBJ724]
+Name=Puerta C casa 11 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=92
+resistencia=200
+Agarrable=1
+IndexAbierta=722
+IndexCerrada=723
+IndexCerradaLlave=724
+
+'<--------------------CASA 12 de Arcadia----------------->
+[OBJ725]
+Name=Llave casa 12 de Arcadia
+Info=Llave casa 12 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=93
+Valor=500000
+
+[OBJ726]
+Name=Puerta A casa 12 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=93
+resistencia=200
+Agarrable=1
+IndexAbierta=726
+IndexCerrada=727
+IndexCerradaLlave=728
+
+[OBJ727]
+Name=Puerta C casa 12 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=93
+resistencia=200
+Agarrable=1
+IndexAbierta=726
+IndexCerrada=727
+IndexCerradaLlave=728
+
+[OBJ728]
+Name=Puerta C casa 12 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=93
+resistencia=200
+Agarrable=1
+IndexAbierta=726
+IndexCerrada=727
+IndexCerradaLlave=728
+
+'<--------------------CASA 13 de Arcadia----------------->
+[OBJ729]
+Name=Llave casa 13 de Arcadia
+Info=Llave casa 13 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=94
+Valor=500000
+
+[OBJ730]
+Name=Puerta A casa 13 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=94
+resistencia=200
+Agarrable=1
+IndexAbierta=730
+IndexCerrada=731
+IndexCerradaLlave=732
+
+[OBJ731]
+Name=Puerta C casa 13 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=94
+resistencia=200
+Agarrable=1
+IndexAbierta=730
+IndexCerrada=731
+IndexCerradaLlave=732
+
+[OBJ732]
+Name=Puerta C casa 13 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=94
+resistencia=200
+Agarrable=1
+IndexAbierta=730
+IndexCerrada=731
+IndexCerradaLlave=732
+
+'<--------------------CASA 14 de Arcadia----------------->
+[OBJ733]
+Name=Llave casa 14 de Arcadia
+Info=Llave casa 14 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=95
+Valor=500000
+
+[OBJ734]
+Name=Puerta A casa 14 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=95
+resistencia=200
+Agarrable=1
+IndexAbierta=734
+IndexCerrada=735
+IndexCerradaLlave=736
+
+[OBJ735]
+Name=Puerta C casa 14 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=95
+resistencia=200
+Agarrable=1
+IndexAbierta=734
+IndexCerrada=735
+IndexCerradaLlave=736
+
+[OBJ736]
+Name=Puerta C casa 14 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=95
+resistencia=200
+Agarrable=1
+IndexAbierta=734
+IndexCerrada=735
+IndexCerradaLlave=736
+
+'<--------------------CASA 15 de Arcadia----------------->
+[OBJ737]
+Name=Llave casa 15 de Arcadia
+Info=Llave casa 15 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=96
+Valor=500000
+
+[OBJ738]
+Name=Puerta A casa 15 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=96
+resistencia=200
+Agarrable=1
+IndexAbierta=738
+IndexCerrada=739
+IndexCerradaLlave=740
+
+[OBJ739]
+Name=Puerta C casa 15 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=96
+resistencia=200
+Agarrable=1
+IndexAbierta=738
+IndexCerrada=739
+IndexCerradaLlave=740
+
+[OBJ740]
+Name=Puerta C casa 15 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=96
+resistencia=200
+Agarrable=1
+IndexAbierta=738
+IndexCerrada=739
+IndexCerradaLlave=740
+
+'<--------------------CASA 16 de Arcadia----------------->
+[OBJ741]
+Name=Llave casa 16 de Arcadia
+Info=Llave casa 16 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=97
+Valor=500000
+
+[OBJ742]
+Name=Puerta A casa 16 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=97
+resistencia=200
+Agarrable=1
+IndexAbierta=742
+IndexCerrada=743
+IndexCerradaLlave=744
+
+[OBJ743]
+Name=Puerta C casa 16 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=97
+resistencia=200
+Agarrable=1
+IndexAbierta=742
+IndexCerrada=743
+IndexCerradaLlave=744
+
+[OBJ744]
+Name=Puerta C casa 16 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=97
+resistencia=200
+Agarrable=1
+IndexAbierta=742
+IndexCerrada=743
+IndexCerradaLlave=744
+
+'<--------------------CASA 17 de Arcadia----------------->
+[OBJ745]
+Name=Llave casa 17 de Arcadia
+Info=Llave casa 17 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=98
+Valor=500000
+
+[OBJ746]
+Name=Puerta A casa 17 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=98
+resistencia=200
+Agarrable=1
+IndexAbierta=746
+IndexCerrada=747
+IndexCerradaLlave=748
+
+[OBJ747]
+Name=Puerta C casa 17 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=98
+resistencia=200
+Agarrable=1
+IndexAbierta=746
+IndexCerrada=747
+IndexCerradaLlave=748
+
+[OBJ748]
+Name=Puerta C casa 17 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=98
+resistencia=200
+Agarrable=1
+IndexAbierta=746
+IndexCerrada=747
+IndexCerradaLlave=748
+
+
+'<--------------------CASA 18 de Arcadia----------------->
+[OBJ749]
+Name=Llave casa 18 de Arcadia
+Info=Llave casa 18 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=99
+Valor=500000
+
+[OBJ750]
+Name=Puerta A casa 18 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=99
+resistencia=200
+Agarrable=1
+IndexAbierta=750
+IndexCerrada=751
+IndexCerradaLlave=752
+
+[OBJ751]
+Name=Puerta C casa 18 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=99
+resistencia=200
+Agarrable=1
+IndexAbierta=750
+IndexCerrada=751
+IndexCerradaLlave=752
+
+[OBJ752]
+Name=Puerta C casa 18 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=99
+resistencia=200
+Agarrable=1
+IndexAbierta=750
+IndexCerrada=751
+IndexCerradaLlave=752
+
+'<--------------------CASA 19 de Arcadia----------------->
+[OBJ753]
+Name=Llave casa 19 de Arcadia
+Info=Llave casa 19 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=100
+Valor=500000
+
+[OBJ754]
+Name=Puerta A casa 19 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=100
+resistencia=200
+Agarrable=1
+IndexAbierta=754
+IndexCerrada=755
+IndexCerradaLlave=756
+
+[OBJ755]
+Name=Puerta C casa 19 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=100
+resistencia=200
+Agarrable=1
+IndexAbierta=754
+IndexCerrada=755
+IndexCerradaLlave=756
+
+[OBJ756]
+Name=Puerta C casa 19 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=100
+resistencia=200
+Agarrable=1
+IndexAbierta=754
+IndexCerrada=755
+IndexCerradaLlave=756
+
+
+'<--------------------CASA 20 de Arcadia----------------->
+[OBJ757]
+Name=Llave casa 20 de Arcadia
+Info=Llave casa 20 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=101
+Valor=500000
+
+[OBJ758]
+Name=Puerta A casa 20 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=101
+resistencia=200
+Agarrable=1
+IndexAbierta=758
+IndexCerrada=759
+IndexCerradaLlave=760
+
+[OBJ759]
+Name=Puerta C casa 20 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=101
+resistencia=200
+Agarrable=1
+IndexAbierta=758
+IndexCerrada=759
+IndexCerradaLlave=760
+
+[OBJ760]
+Name=Puerta C casa 20 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=101
+resistencia=200
+Agarrable=1
+IndexAbierta=758
+IndexCerrada=759
+IndexCerradaLlave=760
+
+'<--------------------CASA 21 de Arcadia----------------->
+[OBJ761]
+Name=Llave casa 21 de Arcadia
+Info=Llave casa 21 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=102
+Valor=500000
+
+[OBJ762]
+Name=Puerta A casa 21 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=102
+resistencia=200
+Agarrable=1
+IndexAbierta=762
+IndexCerrada=763
+IndexCerradaLlave=764
+
+[OBJ763]
+Name=Puerta C casa 21 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=102
+resistencia=200
+Agarrable=1
+IndexAbierta=762
+IndexCerrada=763
+IndexCerradaLlave=764
+
+[OBJ764]
+Name=Puerta C casa 21 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=102
+resistencia=200
+Agarrable=1
+IndexAbierta=762
+IndexCerrada=763
+IndexCerradaLlave=764
+
+'<--------------------CASA 22 de Arcadia----------------->
+[OBJ765]
+Name=Llave casa 22 de Arcadia
+Info=Llave casa 22 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=103
+Valor=500000
+
+[OBJ766]
+Name=Puerta A casa 22 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=103
+resistencia=200
+Agarrable=1
+IndexAbierta=766
+IndexCerrada=767
+IndexCerradaLlave=768
+
+[OBJ767]
+Name=Puerta C casa 22 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=103
+resistencia=200
+Agarrable=1
+IndexAbierta=766
+IndexCerrada=767
+IndexCerradaLlave=768
+
+[OBJ768]
+Name=Puerta C casa 22 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=103
+resistencia=200
+Agarrable=1
+IndexAbierta=766
+IndexCerrada=767
+IndexCerradaLlave=768
+
+
+'<--------------------CASA 23 de Arcadia----------------->
+[OBJ769]
+Name=Llave casa 23 de Arcadia
+Info=Llave casa 23 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=104
+Valor=500000
+
+[OBJ770]
+Name=Puerta A casa 23 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=104
+resistencia=200
+Agarrable=1
+IndexAbierta=770
+IndexCerrada=771
+IndexCerradaLlave=772
+
+[OBJ771]
+Name=Puerta C casa 23 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=104
+resistencia=200
+Agarrable=1
+IndexAbierta=770
+IndexCerrada=771
+IndexCerradaLlave=772
+
+[OBJ772]
+Name=Puerta C casa 23 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=104
+resistencia=200
+Agarrable=1
+IndexAbierta=770
+IndexCerrada=771
+IndexCerradaLlave=772
+
+'<--------------------CASA 24 de Arcadia----------------->
+[OBJ773]
+Name=Llave casa 24 de Arcadia
+Info=Llave casa 24 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=105
+Valor=500000
+
+[OBJ774]
+Name=Puerta A casa 24 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=105
+resistencia=200
+Agarrable=1
+IndexAbierta=774
+IndexCerrada=775
+IndexCerradaLlave=776
+
+[OBJ775]
+Name=Puerta C casa 24 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=105
+resistencia=200
+Agarrable=1
+IndexAbierta=774
+IndexCerrada=775
+IndexCerradaLlave=776
+
+[OBJ776]
+Name=Puerta C casa 24 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=105
+resistencia=200
+Agarrable=1
+IndexAbierta=774
+IndexCerrada=775
+IndexCerradaLlave=776
+
+'<--------------------CASA 25 de Arcadia----------------->
+[OBJ777]
+Name=Llave casa 25 de Arcadia
+Info=Llave casa 25 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=106
+Valor=500000
+
+[OBJ778]
+Name=Puerta A casa 25 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=106
+resistencia=200
+Agarrable=1
+IndexAbierta=778
+IndexCerrada=779
+IndexCerradaLlave=780
+
+[OBJ779]
+Name=Puerta C casa 25 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=106
+resistencia=200
+Agarrable=1
+IndexAbierta=778
+IndexCerrada=779
+IndexCerradaLlave=780
+
+[OBJ780]
+Name=Puerta C casa 25 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=106
+resistencia=200
+Agarrable=1
+IndexAbierta=778
+IndexCerrada=779
+IndexCerradaLlave=780
+
+'<--------------------CASA 26 de Arcadia----------------->
+[OBJ781]
+Name=Llave casa 26 de Arcadia
+Info=Llave casa 26 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=107
+Valor=500000
+
+[OBJ782]
+Name=Puerta A casa 26 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=107
+resistencia=200
+Agarrable=1
+IndexAbierta=782
+IndexCerrada=783
+IndexCerradaLlave=784
+
+[OBJ783]
+Name=Puerta C casa 26 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=107
+resistencia=200
+Agarrable=1
+IndexAbierta=782
+IndexCerrada=783
+IndexCerradaLlave=784
+
+[OBJ784]
+Name=Puerta C casa 26 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=107
+resistencia=200
+Agarrable=1
+IndexAbierta=782
+IndexCerrada=783
+IndexCerradaLlave=784
+
+
+'<--------------------CASA 27 de Arcadia----------------->
+[OBJ785]
+Name=Llave casa 27 de Arcadia
+Info=Llave casa 27 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=108
+Valor=500000
+
+[OBJ786]
+Name=Puerta A casa 27 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=108
+resistencia=200
+Agarrable=1
+IndexAbierta=786
+IndexCerrada=787
+IndexCerradaLlave=788
+
+[OBJ787]
+Name=Puerta C casa 27 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=108
+resistencia=200
+Agarrable=1
+IndexAbierta=786
+IndexCerrada=787
+IndexCerradaLlave=788
+
+[OBJ788]
+Name=Puerta C casa 27 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=108
+resistencia=200
+Agarrable=1
+IndexAbierta=786
+IndexCerrada=787
+IndexCerradaLlave=788
+
+'<--------------------CASA 28 de Arcadia----------------->
+[OBJ789]
+Name=Llave casa 28 de Arcadia
+Info=Llave casa 28 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=109
+Valor=500000
+
+[OBJ790]
+Name=Puerta A casa 28 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=109
+resistencia=200
+Agarrable=1
+IndexAbierta=790
+IndexCerrada=791
+IndexCerradaLlave=792
+
+[OBJ791]
+Name=Puerta C casa 28 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=109
+resistencia=200
+Agarrable=1
+IndexAbierta=790
+IndexCerrada=791
+IndexCerradaLlave=792
+
+[OBJ792]
+Name=Puerta C casa 28 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=109
+resistencia=200
+Agarrable=1
+IndexAbierta=790
+IndexCerrada=791
+IndexCerradaLlave=792
+
+'<--------------------CASA 29 de Arcadia----------------->
+[OBJ793]
+Name=Llave casa 29 de Arcadia
+Info=Llave casa 29 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=110
+Valor=500000
+
+[OBJ794]
+Name=Puerta A casa 29 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=110
+resistencia=200
+Agarrable=1
+IndexAbierta=794
+IndexCerrada=795
+IndexCerradaLlave=796
+
+[OBJ795]
+Name=Puerta C casa 29 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=110
+resistencia=200
+Agarrable=1
+IndexAbierta=794
+IndexCerrada=795
+IndexCerradaLlave=796
+
+[OBJ796]
+Name=Puerta C casa 29 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=110
+resistencia=200
+Agarrable=1
+IndexAbierta=794
+IndexCerrada=795
+IndexCerradaLlave=796
+
+'<--------------------CASA 30 de Arcadia----------------->
+[OBJ797]
+Name=Llave casa 30 de Arcadia
+Info=Llave casa 30 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=111
+Valor=500000
+
+[OBJ798]
+Name=Puerta A casa 30 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=111
+resistencia=200
+Agarrable=1
+IndexAbierta=798
+IndexCerrada=799
+IndexCerradaLlave=800
+
+[OBJ799]
+Name=Puerta C casa 30 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=111
+resistencia=200
+Agarrable=1
+IndexAbierta=798
+IndexCerrada=799
+IndexCerradaLlave=800
+
+[OBJ800]
+Name=Puerta C casa 30 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=111
+resistencia=200
+Agarrable=1
+IndexAbierta=798
+IndexCerrada=799
+IndexCerradaLlave=800
+
+
+'<--------------------CASA 31 de Arcadia----------------->
+[OBJ801]
+Name=Llave casa 31 de Arcadia
+Info=Llave casa 31 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=112
+Valor=500000
+
+[OBJ802]
+Name=Puerta A casa 31 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=112
+resistencia=200
+Agarrable=1
+IndexAbierta=802
+IndexCerrada=803
+IndexCerradaLlave=804
+
+[OBJ803]
+Name=Puerta C casa 31 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=112
+resistencia=200
+Agarrable=1
+IndexAbierta=802
+IndexCerrada=803
+IndexCerradaLlave=804
+
+[OBJ804]
+Name=Puerta C casa 31 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=112
+resistencia=200
+Agarrable=1
+IndexAbierta=802
+IndexCerrada=803
+IndexCerradaLlave=804
+
+
+'<--------------------CASA 32 de Arcadia----------------->
+[OBJ805]
+Name=Llave casa 32 de Arcadia
+Info=Llave casa 32 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=113
+Valor=500000
+
+[OBJ806]
+Name=Puerta A casa 32 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=113
+resistencia=200
+Agarrable=1
+IndexAbierta=806
+IndexCerrada=807
+IndexCerradaLlave=808
+
+[OBJ807]
+Name=Puerta C casa 32 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=113
+resistencia=200
+Agarrable=1
+IndexAbierta=806
+IndexCerrada=807
+IndexCerradaLlave=808
+
+[OBJ808]
+Name=Puerta C casa 32 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=113
+resistencia=200
+Agarrable=1
+IndexAbierta=806
+IndexCerrada=807
+IndexCerradaLlave=808
+
+'<--------------------CASA 33 de Arcadia----------------->
+[OBJ809]
+Name=Llave casa 33 de Arcadia
+Info=Llave casa 33 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=114
+Valor=500000
+
+[OBJ810]
+Name=Puerta A casa 33 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=114
+resistencia=200
+Agarrable=1
+IndexAbierta=810
+IndexCerrada=811
+IndexCerradaLlave=812
+
+[OBJ811]
+Name=Puerta C casa 33 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=114
+resistencia=200
+Agarrable=1
+IndexAbierta=810
+IndexCerrada=811
+IndexCerradaLlave=812
+
+[OBJ812]
+Name=Puerta C casa 33 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=114
+resistencia=200
+Agarrable=1
+IndexAbierta=810
+IndexCerrada=811
+IndexCerradaLlave=812
+
+'<--------------------CASA 34 de Arcadia----------------->
+[OBJ813]
+Name=Llave casa 34 de Arcadia
+Info=Llave casa 34 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=115
+Valor=500000
+
+[OBJ814]
+Name=Puerta A casa 34 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=115
+resistencia=200
+Agarrable=1
+IndexAbierta=814
+IndexCerrada=815
+IndexCerradaLlave=816
+
+[OBJ815]
+Name=Puerta C casa 34 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=115
+resistencia=200
+Agarrable=1
+IndexAbierta=814
+IndexCerrada=815
+IndexCerradaLlave=816
+
+[OBJ816]
+Name=Puerta C casa 34 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=115
+resistencia=200
+Agarrable=1
+IndexAbierta=814
+IndexCerrada=815
+IndexCerradaLlave=816
+
+'<--------------------CASA 35 de Arcadia----------------->
+[OBJ817]
+Name=Llave casa 35 de Arcadia
+Info=Llave casa 35 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=116
+Valor=500000
+
+[OBJ818]
+Name=Puerta A casa 35 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=116
+resistencia=200
+Agarrable=1
+IndexAbierta=818
+IndexCerrada=819
+IndexCerradaLlave=820
+
+[OBJ819]
+Name=Puerta C casa 35 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=116
+resistencia=200
+Agarrable=1
+IndexAbierta=818
+IndexCerrada=819
+IndexCerradaLlave=820
+
+[OBJ820]
+Name=Puerta C casa 35 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=116
+resistencia=200
+Agarrable=1
+IndexAbierta=818
+IndexCerrada=819
+IndexCerradaLlave=820
+
+'<--------------------CASA 36 de Arcadia----------------->
+[OBJ821]
+Name=Llave casa 36 de Arcadia
+Info=Llave casa 36 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=117
+Valor=500000
+
+[OBJ822]
+Name=Puerta A casa 36 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=117
+resistencia=200
+Agarrable=1
+IndexAbierta=822
+IndexCerrada=823
+IndexCerradaLlave=824
+
+[OBJ823]
+Name=Puerta C casa 36 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=117
+resistencia=200
+Agarrable=1
+IndexAbierta=822
+IndexCerrada=823
+IndexCerradaLlave=824
+
+[OBJ824]
+Name=Puerta C casa 36 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=117
+resistencia=200
+Agarrable=1
+IndexAbierta=822
+IndexCerrada=823
+IndexCerradaLlave=824
+
+'<--------------------CASA 37 de Arcadia----------------->
+[OBJ825]
+Name=Llave casa 37 de Arcadia
+Info=Llave casa 37 de Arcadia
+GrhIndex =509
+ObjType=9
+Clave=118
+Valor=500000
+
+[OBJ826]
+Name=Puerta A casa 37 de Arcadia
+GrhIndex =9203
+ObjType=6
+abierta=0
+llave=0
+clave=118
+resistencia=200
+Agarrable=1
+IndexAbierta=826
+IndexCerrada=827
+IndexCerradaLlave=828
+
+[OBJ827]
+Name=Puerta C casa 37 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=0
+clave=118
+resistencia=200
+Agarrable=1
+IndexAbierta=826
+IndexCerrada=827
+IndexCerradaLlave=828
+
+[OBJ828]
+Name=Puerta C casa 37 de Arcadia
+GrhIndex=9197
+ObjType=6
+abierta=1
+llave=1
+clave=118
+resistencia=200
+Agarrable=1
+IndexAbierta=826
+IndexCerrada=827
+IndexCerradaLlave=828
+
+[OBJ829]
+Name=ropa humilde
+GrhIndex=13477
+NumRopaje=173
+ObjType=3
+MAXDEF=8
+MINDEF=2
+Valor=3500
+Crucial=1
+
+[OBJ830]
+Name=cota de sangre
+GrhIndex=13473
+NumRopaje=174
+ObjType=3
+MAXDEF=8
+MINDEF=2
+Valor=3500
+Crucial=1
+
+[OBJ831]
+Name=tunica blanca
+GrhIndex=13479
+NumRopaje=175
+ObjType=3
+MAXDEF=12
+MINDEF=6
+Valor=10000
+Crucial=1
+
+[OBJ834]
+Name=Armadura tyler
+GrhIndex=13467
+NumRopaje=178
+ObjType=3
+MAXDEF=50
+MINDEF=35
+Valor=2000000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+
+[OBJ835]
+Name=cota de mallas enanos
+GrhIndex=13469
+NumRopaje=179
+ObjType=3
+MAXDEF=10
+MINDEF=2
+Valor=5000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+RazaEnana=1
+
+[OBJ836]
+Name=Armadura de oro imperial enanos
+GrhIndex=13470
+NumRopaje=180
+ObjType=3
+MAXDEF=24
+MINDEF=12
+Valor=75000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+RazaEnana=1
+
+[OBJ837]
+Name=Armadura de oro imperial
+GrhIndex=13471
+NumRopaje=181
+ObjType=3
+MAXDEF=24
+MINDEF=12
+Valor=75000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+
+[OBJ839]
+Name=Armadura caos mujer
+GrhIndex=13478
+NumRopaje=183
+ObjType=3
+MAXDEF=24
+MINDEF=12
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+caos=1
+
+'armaduras dragones azules
+
+[OBJ841]
+Name=Armadura de Dragón azul (Mujer)
+GrhIndex=15685
+NumRopaje=215
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Mujer=1
+SkHerreria=100
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+
+[OBJ842]
+Name=Armadura de Dragón azul (Hombre)
+GrhIndex=15686
+NumRopaje=216
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+[OBJ843]
+Name=Armadura de Dragón azul(Enano/Enana)
+GrhIndex=15687
+NumRopaje=217
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+'armaduras dragones marron
+
+[OBJ844]
+Name=Armadura de Dragón marron (Mujer)
+GrhIndex=15688
+NumRopaje=218
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Mujer=1
+SkHerreria=100
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+
+[OBJ845]
+Name=Armadura de Dragón marron (Hombre)
+GrhIndex=15689
+NumRopaje=219
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+[OBJ846]
+Name=Armadura de Dragón marron(Enano/Enana)
+GrhIndex=15690
+NumRopaje=220
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+'armaduras dragones verdes
+
+[OBJ847]
+Name=Armadura de Dragón verde (Mujer)
+GrhIndex=15691
+NumRopaje=221
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Mujer=1
+SkHerreria=100
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+
+[OBJ848]
+Name=Armadura de Dragón verde (Hombre)
+GrhIndex=15692
+NumRopaje=222
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+[OBJ849]
+Name=Armadura de Dragón verde(Enano/Enana)
+GrhIndex=15693
+NumRopaje=223
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+'armaduras dragones negra
+
+[OBJ850]
+Name=Armadura de Dragón negra (Mujer)
+GrhIndex=15694
+NumRopaje=224
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Mujer=1
+SkHerreria=100
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+
+[OBJ851]
+Name=Armadura de Dragón negra (Hombre)
+GrhIndex=15695
+NumRopaje=225
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+[OBJ852]
+Name=Armadura de Dragón negra(Enano/Enana)
+GrhIndex=15696
+NumRopaje=226
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+'armaduras dragones blanca
+
+[OBJ853]
+Name=Armadura de Dragón blanca (Mujer)
+GrhIndex=15697
+NumRopaje=227
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Mujer=1
+SkHerreria=100
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+
+[OBJ854]
+Name=Armadura de Dragón blanca (Hombre)
+GrhIndex=15698
+NumRopaje=228
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+[OBJ855]
+Name=Armadura de Dragón blanca(Enano/Enana)
+GrhIndex=15699
+NumRopaje=229
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+LingH=100
+LingP=500
+LingO=400
+SkHerreria=100
+
+[OBJ856]
+Name=Armadura de placas hobbit
+GrhIndex=18889
+NumRopaje=236
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=24000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+LingH=800
+SkHerreria=76
+RazaEnana=1
+
+[OBJ857]
+Name=Tunica de mago hobbit
+GrhIndex=18890
+NumRopaje=237
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=3000
+Crucial=1
+RazaEnana=1
+
+[OBJ858]
+Name=Tunica de clerigo hobbit
+GrhIndex=18891
+NumRopaje=238
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=3000
+Crucial=1
+RazaEnana=1
+
+[OBJ859]
+Name=ropa humilde hobbit
+GrhIndex=18892
+NumRopaje=241
+ObjType=3
+MAXDEF=6
+MINDEF=2
+Valor=3200
+Crucial=1
+RazaEnana=1
+
+[OBJ860]
+Name=traje mujer hobbit
+GrhIndex=18893
+NumRopaje=242
+ObjType=3
+MAXDEF=8
+MINDEF=4
+Valor=7000
+Crucial=1
+RazaEnana=1
+
+[OBJ867]
+Name=ropa comun hobbit
+GrhIndex=18901
+NumRopaje=250
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=50
+Crucial=1
+RazaEnana=1
+
+[OBJ868]
+Name=traje novia hobbit
+GrhIndex=18902
+NumRopaje=251
+ObjType=3
+MAXDEF=25
+MINDEF=12
+Valor=12000
+Crucial=1
+RazaEnana=1
+
+[OBJ869]
+Name=ropaje del artico
+GrhIndex=18903
+NumRopaje=208
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+
+[OBJ870]
+Name=ropaje del artico enanos
+GrhIndex=18904
+NumRopaje=209
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+RazaEnana=1
+
+[OBJ871]
+Name=ropaje del artico mujer
+GrhIndex=18905
+NumRopaje=210
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+
+[OBJ871]
+Name=tunica del artico
+GrhIndex=18906
+NumRopaje=211
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+
+[OBJ871]
+Name=tunica del artico
+GrhIndex=18906
+NumRopaje=211
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+
+[OBJ872]
+Name=tunica del artico enano
+GrhIndex=18907
+NumRopaje=212
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+RazaEnana=1
+
+[OBJ873]
+Name=tunica del artico enana
+GrhIndex=18908
+NumRopaje=213
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+RazaEnana=1
+
+[OBJ874]
+Name=ropaje del artico enana
+GrhIndex=18909
+NumRopaje=214
+ObjType=3
+MAXDEF=15
+MINDEF=10
+Valor=20000
+Crucial=1
+RazaEnana=1
+
+[OBJ875]
+Name=ropaje de orco mujer
+GrhIndex=18910
+NumRopaje=231
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=50
+Crucial=1
+
+[OBJ876]
+Name=ropaje de orco
+GrhIndex=18911
+NumRopaje=235
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=50
+Crucial=1
+
+[OBJ877]
+Name=ropaje de guerra orco
+GrhIndex=18912
+NumRopaje=233
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=5000
+Crucial=1
+
+[OBJ878]
+Name=ropaje de orco (newbie)
+GrhIndex=18911
+NumRopaje=235
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=0
+Crucial=1
+Newbie=1
+
+[OBJ879]
+Name=ropa comun hobbit(newbie)
+GrhIndex=18901
+NumRopaje=250
+ObjType=3
+MAXDEF=1
+MINDEF=1
+Valor=0
+Crucial=1
+Newbie=1
+RazaEnana=1
+
+[OBJ880]
+Name=Tumba de Neptuno
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Neptuno Dios Creador de AOSPain.
+Agarrable=1
+
+[OBJ881]
+Name=Tumba de Venus
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Venus Diosa Protectora de las tierras de AOSpain.
+Agarrable=1
+
+[OBJ882]
+Name=Tumba de Maiden
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Maiden Dios Espia de las sombras de AOSpain.
+Agarrable=1
+
+[OBJ883]
+Name=Tumba de Astro
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Astro Dios Protector de las tierras de AOSpain.
+Agarrable=1
+
+[OBJ884]
+Name=Tumba de Fenix
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de fenix Dios de las Almas de AOSpain.
+Agarrable=1
+
+[OBJ885]
+Name=Tumba vacia
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=libre para dormir xD.
+Agarrable=1
+
+[OBJ886]
+Name=Tumba de Tyler Durden
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Tyler Durden uno de los magos que marcaron la historia de AOSpain.
+Agarrable=1
+
+[OBJ887]
+Name=Tumba de Warez
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Warez sin duda uno de los magos más temidos de toda la historia de AOSpain.
+Agarrable=1
+
+[OBJ888]
+Name=Tumba de Lord Cato
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Lord Cato Alma gemela de su espada, siempre sera recordado como el gran Paladin de AOSpain.
+Agarrable=1
+
+[OBJ889]
+Name=Tumba de Neus
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Neus Una de las Magas más recordadas por su defensa del Bien y como gran persona en AOSpain.
+Agarrable=1
+
+[OBJ890]
+Name=Tumba de Zalamera
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará por todo la eternidad el cuerpo de Zalamera Temida más q como si fuera un hombre y recordada como la Paladina de AOSpain.
+Agarrable=1
+
+[OBJ891]
+Name=Tumba de Carlos
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará el cuerpo de Carlos un personaje restrasado mental que por esa condición no sabia ni empuñar la espada, el cual se edito para poder hacerlo y fue ejecutado por ese delito, una escoria sin duda que no deveria ni estar aqui.
+Agarrable=1
+
+[OBJ892]
+Name=Tumba de Palaka
+GrhIndex=513
+VGrande=514
+ObjType=8
+Texto=Aqui descansará el cuerpo de Palaka un personaje por llamarlo asi, que no sabia ni luchar, ni trabajar, ni respetar, simplemente sabia amenazar, aunque por la boca muere el pez ya que todos lo dejaron de lado, todos le ignoraron y de nada le sirvieron sus amenazas de su  9mm paravelum o su intento de editarse ya que hasta para eso era malo, ya que fue humillado delante de todos y acabo comiendose su propia mierda en una celda de banderbill hasta morir y al final no sabemos como acabo aqui.
+Agarrable=1
+
+[OBJ893]
+Name=Armadura de Dragon hobbit
+GrhIndex=18900
+NumRopaje=236
+ObjType=3
+MAXDEF=24
+MINDEF=20
+Valor=60000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+LingH=800
+SkHerreria=76
+RazaEnana=1
+
+'Remueve paralisis
+[OBJ894]
+Name=Pocion Remueve Paralisis
+GrhIndex=18913
+ObjType=11
+TipoPocion=6
+Valor=20000
+Crucial=1
+
+'Remueve ceguera
+[OBJ895]
+Name=Pocion Remueve ceguera
+GrhIndex=18914
+ObjType=11
+TipoPocion=7
+Valor=20000
+Crucial=1
+
+'Remueve estupidez
+[OBJ896]
+Name=Pocion Remueve estupidez
+GrhIndex=18915
+ObjType=11
+TipoPocion=8
+Valor=20000
+Crucial=1
+
+[OBJ897]
+Name=Arco de Oro
+Vendible=0
+GrhIndex=13408
+Objtype=2
+MinHIT=15
+MaxHIT=30
+Valor=100000
+Anim=7
+CP1="MAGO"
+CP2="DRUIDA"
+CP2="CHAMAN"
+Proyectil=1
+
+[OBJ898]
+Name=Espada Celestial
+GrhIndex=13414
+Objtype=2
+MinHIT=30
+MaxHIT=40
+Valor=250000
+Anim=14
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ899]
+Name=Espada Newbie (Newbies)
+GrhIndex=13429
+Objtype=2
+MinHIT=4
+MaxHIT=8
+Valor=300
+Anim=1
+newbie=1
+
+[OBJ900]
+Name=Espada Newbie Imperial (Newbies)
+GrhIndex=13431
+Objtype=2
+MinHIT=8
+MaxHIT=12
+Valor=600
+Anim=1
+newbie=1
+
+[OBJ901]
+Name=Espada Newbie Celestial (Newbies)
+GrhIndex=13432
+Objtype=2
+MinHIT=10
+MaxHIT=15
+Valor=2000
+Anim=1
+newbie=1
+
+[OBJ902]
+Name=Espada de Venus
+GrhIndex=13430
+Objtype=2
+MinHIT=34
+MaxHIT=42
+Valor=250000
+Anim=17
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ903]
+Name=Espada de Neptuno
+GrhIndex=13433
+Objtype=2
+MinHIT=34
+MaxHIT=44
+Valor=400000
+Anim=17
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ904]
+Name=Espada de Maiden
+GrhIndex=13434
+Objtype=2
+MinHIT=25
+MaxHIT=35
+Valor=100000
+Anim=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ905]
+Name=Olla de Cocinero
+GrhIndex=13435
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+
+[OBJ906]
+Name=Coptelera
+GrhIndex=13435
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+
+[OBJ907]
+Name=Olla de Druida
+GrhIndex=13435
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+
+[OBJ908]
+Name=tijeras
+GrhIndex=18921
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+
+[OBJ909]
+Name=Puñal fenix
+GrhIndex=13452
+Objtype=2
+MinHIT=8
+MaxHIT=12
+Valor=130000
+Anim=2
+Plus=1
+Apuñala=1
+
+[OBJ910]
+Name=Espada de Fenix
+GrhIndex=15595
+Objtype=2
+MinHIT=31
+MaxHIT=41
+Valor=240000
+Anim=17
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+'<------------------------ Inicio: Armaduras y tunicas del Imperio by AOSpain (Config by Neptuno)------------------------->
+[OBJ516]
+Name=Tunica del Imperio 1º Jerarquia (Mujer)
+GrhIndex=793
+NumRopaje=127
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+CP1="GUERRERO"
+Mujer=1
+Real=1
+
+[OBJ517]
+Name=Tunica del Imperio 1º Jerarquia (Hombre)
+GrhIndex=794
+NumRopaje=128
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+CP1="GUERRERO"
+Real=1
+
+[OBJ911]
+Name=Tunica del Imperio 2º Jerarquia
+GrhIndex=767
+NumRopaje=101
+ObjType=3
+MAXDEF=20
+MINDEF=20
+Valor=0
+CP1="GUERRERO"
+Real=1
+
+[OBJ912]
+Name=Tunica del Imperio 3º Jerarquia
+GrhIndex=13480
+NumRopaje=167
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+CP1="GUERRERO"
+Real=1
+
+[OBJ913]
+Name=Armadura del Imperio 1º Jerarquia (Mujer)
+GrhIndex=798
+NumRopaje=132
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Mujer=1
+Real=1
+
+[OBJ914]
+Name=Armadura del Imperio 2º Jerarquia (Mujer)
+GrhIndex=798
+NumRopaje=132
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+Mujer=1
+Real=1
+
+[OBJ915]
+Name=Armadura del Imperio 3º Jerarquia (Mujer)
+GrhIndex=690
+NumRopaje=64
+ObjType=3
+MAXDEF=35
+MINDEF=35
+Valor=0
+Mujer=1
+Real=1
+
+[OBJ372]
+Name=Armadura de Clerigo del Imperio 1º Jerarquia (hombre)
+GrhIndex=759
+NumRopaje=92
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Alineacion=1
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP13="LEÑADOR"
+Real=1
+
+[OBJ635]
+Name=Armadura de Clerigo del Imperio 2º Jerarquia (hombre)
+GrhIndex=13482
+NumRopaje=168
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP4="BARDO"
+real=1
+
+[OBJ838]
+Name=Armadura de Clerigo del Imperio 3º Jerarquia (hombre)
+GrhIndex=13465
+NumRopaje=182
+ObjType=3
+MAXDEF=35
+MINDEF=35
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+real=1
+
+[OBJ370]
+Name=Armadura del Imperio 1º Jerarquia (hombre)
+GrhIndex=688
+NumRopaje=62
+ObjType=3
+MAXDEF=25
+MINDEF=15
+Valor=0
+Alineacion=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP13="LEÑADOR"
+Real=1
+
+[OBJ832]
+Name=Armadura del Imperio 2º Jerarquia (hombre)
+GrhIndex=13472
+NumRopaje=176
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+Real=1
+
+[OBJ916]
+Name=Armadura del Imperio 3º Jerarquia (hombre)
+GrhIndex=19596
+NumRopaje=271
+ObjType=3
+MAXDEF=35
+MINDEF=35
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+Real=1
+
+[OBJ864]
+Name=Tunica del Imperio 1º Jerarquia (hobbit)
+GrhIndex=18897
+NumRopaje=246
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+Crucial=1
+real=1
+RazaEnana=1
+
+[OBJ865]
+Name=Tunica del Imperio 2º Jerarquia (hobbit)
+GrhIndex=18898
+NumRopaje=247
+ObjType=3
+MAXDEF=20
+MINDEF=20
+Valor=0
+Crucial=1
+real=1
+RazaEnana=1
+
+[OBJ866]
+Name=Tunica del Imperio 3º Jerarquia (hobbit)
+GrhIndex=18899
+NumRopaje=248
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Crucial=1
+real=1
+RazaEnana=1
+
+[OBJ840]
+Name=Tunica del Imperio 1º Jerarquia (Enano)
+GrhIndex=13481
+NumRopaje=184
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+Crucial=1
+real=1
+razaenana=1
+
+[OBJ917]
+Name=Tunica del Imperio 2º Jerarquia (Enano)
+GrhIndex=802
+NumRopaje=136
+ObjType=3
+MAXDEF=20
+MINDEF=20
+Valor=0
+RazaEnana=1
+real=1
+Crucial=1
+
+[OBJ918]
+Name=Tunica del Imperio 3º Jerarquia (Enano)
+GrhIndex=803
+NumRopaje=137
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+RazaEnana=1
+real=1
+Crucial=1
+
+[OBJ492]
+Name=Armadura del Imperio 1º Jerarquia (Enano)
+GrhIndex=768
+NumRopaje=102
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Alineacion=1
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP13="LEÑADOR"
+Real=1
+RazaEnana=1
+
+[OBJ522]
+Name=Armadura del Imperio 1º Jerarquia (Enano)
+GrhIndex=799
+NumRopaje=133
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+RazaEnana=1
+Real=1
+
+[OBJ919]
+Name=Armadura del Imperio 1º Jerarquia (Enano)
+GrhIndex=15687
+NumRopaje=217
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+RazaEnana=1
+CP1="MAGO"
+CP2="MINERO"
+CP3="PESCADOR"
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+Real=1
+'<------------------------ Fin: Armaduras y tunicas del Imperio by AOSpain (Config by Neptuno)------------------------->
+'<------------------------ Inicio: Armaduras y tunicas del Caos by AOSpain (Config by Neptuno)------------------------->
+[OBJ509]
+Name=Tunica Mago del Caos 1º Jerarquia (Mujer)
+GrhIndex=785
+NumRopaje=119
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+CP1="SASTRE"
+CP2="PIRATA"
+CP3="GUERRERO"
+Mujer=1
+Caos=1
+
+[OBJ518]
+Name=Tunica Mago del Caos 1º Jerarquia (Hombre)
+GrhIndex=795
+NumRopaje=129
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+CP1="GUERRERO"
+Caos=1
+
+[OBJ369]
+Name=Tunica Mago del Caos 2º Jerarquia
+GrhIndex=687
+NumRopaje=61
+ObjType=3
+MAXDEF=20
+MINDEF=20
+Valor=0
+PlusMagia=10
+Alineacion=1
+Caos=1
+
+[OBJ557]
+Name=Tunica Mago del Caos 2ª Jerarquia
+GrhIndex=687
+NumRopaje=61
+ObjType=3
+MAXDEF=20
+MINDEF=20
+Valor=0
+CP1="GUERRERO"
+Caos=1
+
+[OBJ380]
+Name=Tunica Mago del Caos 3ª Jerarquia
+GrhIndex=692
+NumRopaje=78
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+PlusMagia=10
+Alineacion=1
+Caos=1
+
+[OBJ494]
+Name=Armadura del Caos 1º Jerarquia (Mujer)
+GrhIndex=770
+NumRopaje=104
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+CP1="MAGO"
+CP2="DRUIDA"
+Mujer=1
+Caos=1
+
+[OBJ920]
+Name=Armadura del Caos 2º Jerarquia (Mujer)
+GrhIndex=774
+NumRopaje=108
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+CP1="MAGO"
+CP2="DRUIDA"
+Mujer=1
+Caos=1
+
+[OBJ555]
+Name=Armadura del Caos 3º Jerarquia (Mujer)
+GrhIndex=19597
+NumRopaje=272
+ObjType=3
+MAXDEF=35
+MINDEF=35
+Valor=0
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="CLERIGO"
+CP6="PIRATA"
+CP7="LEÑADOR"
+CP8="ASESINO"
+CP9="HERRERO"
+CP10="CARPINTERO"
+Mujer=1
+Caos=1
+
+[OBJ379]
+Name=Armadura del Caos 1º Jerarquia (Hombre)
+GrhIndex=691
+NumRopaje=77
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Alineacion=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP13="LEÑADOR"
+Caos=1
+
+[OBJ523]
+Name=Armadura del Caos 2º Jerarquia (Hombre)
+GrhIndex=800
+NumRopaje=134
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+CP1="MAGO"
+CP2="SASTRE"
+CP3="PIRATA"
+Caos=1
+
+[OBJ631]
+Name=Armadura del Caos 3º Jerarquia (Hombre)
+GrhIndex=13466
+NumRopaje=164
+ObjType=3
+MAXDEF=35
+MINDEF=35
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+Caos=1
+
+[OBJ553]
+Name=Tunica Mago del Caos 1ª Jerarquia (Enanos)
+GrhIndex=801
+NumRopaje=135
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+RazaEnana=1
+Caos=1
+
+[OBJ554]
+Name=Tunica Mago del Caos 2ª Jerarquia (Enanos)
+GrhIndex=13464
+NumRopaje=23
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+RazaEnana=1
+caos=1
+
+[OBJ833]
+Name=Tunica Mago del Caos 3ª Jerarquia (Enanos)
+GrhIndex=13464
+NumRopaje=177
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Crucial=1
+RazaEnana=1
+Caos=1
+
+[OBJ383]
+Name=Armadura del Caos 1º Jerarquia (Enanos)
+GrhIndex=695
+NumRopaje=81
+ObjType=3
+MAXDEF=25
+MINDEF=25
+RazaEnana=1
+Caos=1
+
+[OBJ636]
+Name=Armadura del Caos 2º Jerarquia (Enanos)
+GrhIndex=13483
+NumRopaje=169
+ObjType=3
+MAXDEF=30
+MINDEF=30
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+RazaEnana=1
+caos=1
+
+[OBJ637]
+Name=Armadura del Caos 3º Jerarquia (Enanos)
+GrhIndex=13484
+NumRopaje=170
+ObjType=3
+MAXDEF=35
+MINDEF=35
+Valor=0
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+RazaEnana=1
+caos=1
+
+[OBJ861]
+Name=Tunica del Caos 3º Jerarquia (hobbit)
+GrhIndex=18894
+NumRopaje=243
+ObjType=3
+MAXDEF=15
+MINDEF=15
+Valor=0
+Crucial=1
+caos=1
+RazaEnana=1
+
+[OBJ862]
+Name=Tunica del Caos 3º Jerarquia (hobbit)
+GrhIndex=18895
+NumRopaje=244
+ObjType=3
+MAXDEF=20
+MINDEF=20
+Valor=0
+Crucial=1
+caos=1
+RazaEnana=1
+
+[OBJ863]
+Name=Tunica del Caos 3º Jerarquia (hobbit)
+GrhIndex=18896
+NumRopaje=245
+ObjType=3
+MAXDEF=25
+MINDEF=25
+Valor=0
+Crucial=1
+caos=1
+RazaEnana=1
+'<------------------------ Fin: Armaduras y tunicas del Caos by AOSpain (Config by Neptuno)------------------------->
+[OBJ922]
+Name=Montura de Caballo
+NumRopaje=258
+GrhIndex=19492
+ObjType=37
+valor=500000
+MinSkill=30
+MinHIT=10
+MaxHIT=25
+MINDEF=5
+MAXDEF=10
+
+[OBJ923]
+Name=Montura de Unicornio
+NumRopaje=257
+GrhIndex=19492
+ObjType=37
+valor=500000
+MinSkill=40
+MinHIT=10
+MaxHIT=25
+MINDEF=5
+MAXDEF=10
+
+[OBJ924]
+Name=Flores
+GrhIndex=18922
+Objtype=30
+Valor=0
+
+[OBJ925]
+Name=Hacha de Odin
+GrhIndex=18923
+Objtype=2
+MinHIT=6
+MaxHIT=21
+Valor=6000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ926]
+Name=Hacha Salvaje
+GrhIndex=18924
+Objtype=2
+MinHIT=7
+MaxHIT=22
+Valor=7000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ927]
+Name=Hacha de Bronce
+GrhIndex=18925
+Objtype=2
+MinHIT=7
+MaxHIT=22
+Valor=7000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ928]
+Name=Hacha de Oro
+GrhIndex=18926
+Objtype=2
+MinHIT=9
+MaxHIT=24
+Valor=9000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ929]
+Name=Hacha de Plata
+GrhIndex=18927
+Objtype=2
+MinHIT=8
+MaxHIT=23
+Valor=8000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ930]
+Name=Hacha de Piedra
+GrhIndex=18928
+Objtype=2
+MinHIT=7
+MaxHIT=22
+Valor=7000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ931]
+Name=Hacha de tres puntas
+GrhIndex=18929
+Objtype=2
+MinHIT=10
+MaxHIT=30
+Valor=15000
+Anim=16
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="CHAMAN"
+CP19="WILORD"
+
+[OBJ932]
+Name=Vara de mago Real
+GrhIndex=18930
+Objtype=2
+MinHIT=15
+MaxHIT=25
+Valor=0
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+Real=1
+
+[OBJ933]
+Name=Vara de mago Caos
+GrhIndex=18933
+Objtype=2
+MinHIT=15
+MaxHIT=25
+Valor=0
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+Caos=1
+
+[OBJ934]
+Name=Vara de mago de Hielo
+GrhIndex=18931
+Objtype=2
+MinHIT=16
+MaxHIT=26
+Valor=60000
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+
+[OBJ935]
+Name=Vara de mago Escorpion
+GrhIndex=18932
+Objtype=2
+MinHIT=17
+MaxHIT=27
+Valor=70000
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+
+[OBJ936]
+Name=Vara de mago Celestial
+GrhIndex=18934
+Objtype=2
+MinHIT=18
+MaxHIT=28
+Valor=80000
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+
+[OBJ937]
+Name=Vara de mago Sagrada
+GrhIndex=18935
+Objtype=2
+MinHIT=20
+MaxHIT=30
+Valor=5000000
+Anim=6
+CP1="GLADIADOR"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+CP14="ARQUERO"
+CP15="ALDEANO"
+CP16="COCINERO"
+CP17="CAMARERO"
+CP18="WILORD"
+CP19="GUERRERO"
+CP20="PALADIN"
+CP21="BANDIDO"
+CP22="CLERIGO"
+real=1
+
+[OBJ938]
+Name=Daga Venenosa
+GrhIndex=18936
+Objtype=2
+MinHIT=5
+MaxHIT=10
+Valor=500
+Anim=1
+crucial=1
+apuñala=1
+Veneno=1
+
+[OBJ939]
+Name=Puñal de Raizes
+GrhIndex=18937
+Objtype=18
+Valor=200
+Anim=1
+Crucial=1
+
+[OBJ940]
+Name=Cabeza de Dragon 
+GrhIndex=18938
+Objtype=30
+Valor=0
+
+[OBJ941]
+Name=Cabeza de Dragon Blanca
+GrhIndex=18939
+Objtype=30
+Valor=0
+
+[OBJ942]
+Name=Cabeza de Dragon Lila
+GrhIndex=18940
+Objtype=30
+Valor=0
+
+[OBJ943]
+Name=Cabeza de Dragon Naranja
+GrhIndex=18941
+Objtype=30
+Valor=0
+
+[OBJ944]
+Name=Cabeza de Dragon Negra
+GrhIndex=18942
+Objtype=30
+Valor=0
+
+[OBJ945]
+Name=Cabeza de Dragon Roja
+GrhIndex=18943
+Objtype=30
+Valor=0
+
+[OBJ946]
+Name=Cabeza de Dragon Verde
+GrhIndex=18944
+Objtype=30
+Valor=0
+
+[OBJ947]
+Name=Armadura de Gladiador(hombre)
+GrhIndex=19598
+NumRopaje=274
+ObjType=3
+MAXDEF=30
+MINDEF=20
+Valor=100000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+
+[OBJ948]
+Name=Armadura de Gladiador(Mujer)
+GrhIndex=19599
+NumRopaje=275
+ObjType=3
+MAXDEF=30
+MINDEF=20
+Valor=100000
+Crucial=1
+CP1="MAGO"
+CP2="DRUIDA"
+CP3="LADRON"
+CP4="BARDO"
+CP5="SASTRE"
+CP6="PIRATA"
+CP7="ASESINO"
+CP8="PESCADOR"
+CP9="MINERO"
+CP10="CARPINTERO"
+CP11="HERRERO"
+CP12="CAZADOR"
+CP13="LEÑADOR"
+Mujer=1
+
+[OBJ949]
+Name=Traje de Novio (Enano)
+GrhIndex=19601
+NumRopaje=276
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+RazaEnana=1
+Real=1
+
+[OBJ950]
+Name=Traje de Novio (Hobbit)
+GrhIndex=19601
+NumRopaje=277
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+RazaEnana=1
+Real=1
+
+[OBJ951]
+Name=Traje de Novio (Hombre)
+GrhIndex=19601
+NumRopaje=278
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+Real=1
+
+[OBJ952]
+Name=Traje de Novia (Hobbit)
+GrhIndex=19602
+NumRopaje=279
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+RazaEnana=1
+Real=1
+
+[OBJ953]
+Name=Fragata Real 1º Jerarquia
+GrhIndex=749
+ObjType=38
+valor=0
+NumRopaje=267
+MinSkill=30
+MinHIT=10
+MaxHIT=25
+MINDEF=5
+MAXDEF=10
+Real=1
+
+[OBJ954]
+Name=Fragata Real 2º Jerarquia
+GrhIndex=749
+ObjType=38
+valor=0
+NumRopaje=269
+MinSkill=40
+MinHIT=25
+MaxHIT=45
+MINDEF=10
+MAXDEF=20
+Real=1
+
+[OBJ955]
+Name=Fragata Real 3º Jerarquia
+GrhIndex=749
+ObjType=38
+valor=0
+NumRopaje=195
+MinSkill=50
+MinHIT=45
+MaxHIT=105
+MINDEF=20
+MAXDEF=30
+Real=1
+
+[OBJ956]
+Name=Fragata Caos 1º Jerarquia
+GrhIndex=749
+ObjType=38
+valor=0
+NumRopaje=268
+MinSkill=30
+MinHIT=10
+MaxHIT=25
+MINDEF=5
+MAXDEF=10
+Caos=1
+
+[OBJ957]
+Name=Fragata Caos 2º Jerarquia
+GrhIndex=749
+ObjType=38
+valor=0
+NumRopaje=270
+MinSkill=40
+MinHIT=25
+MaxHIT=45
+MINDEF=10
+MAXDEF=20
+Caos=1
+
+[OBJ958]
+Name=Fragata Caos 3º Jerarquia
+GrhIndex=749
+ObjType=38
+valor=0
+NumRopaje=196
+MinSkill=50
+MinHIT=45
+MaxHIT=105
+MINDEF=20
+MAXDEF=30
+Caos=1
+
+[OBJ959]
+Name=Traje de Novia (Hobbit Caos)
+GrhIndex=19602
+NumRopaje=279
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+RazaEnana=1
+Caos=1
+
+[OBJ960]
+Name=Traje de Novio (Hombre Caos)
+GrhIndex=19601
+NumRopaje=278
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+Caos=1
+
+[OBJ961]
+Name=Traje de Novio (Hobbit Caos)
+GrhIndex=19601
+NumRopaje=277
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+RazaEnana=1
+Caos=1
+
+[OBJ962]
+Name=Traje de Novio (Enano Caos)
+GrhIndex=19601
+NumRopaje=276
+ObjType=3
+MAXDEF=10
+MINDEF=5
+Valor=10000
+Crucial=1
+RazaEnana=1
+Caos=1
+
+[OBJ963]
+Name=Vestido De Novia Sensual (Caos)
+GrhIndex=19602
+NumRopaje=121
+ObjType=3
+MAXDEF=5
+MINDEF=1
+Valor=4000
+Mujer=1
+Crucial=1
+Caos=1
